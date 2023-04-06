@@ -1,0 +1,293 @@
+header {
+    --color0: #ffffff;
+    --color0-contrast: #000000;
+    --color1: #1c6ccd;
+    --color1-contrast: #ffffff;
+    --color2: #44d5a7;
+    --color2-contrast: #ffffff;
+    --color3: #f8e472;
+    --color3-contrast: #063728;
+    --color4: #192229;
+    --color4-contrast: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    height: var(--header-height);
+
+
+}
+
+header .container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+/*ANUNCIO*/
+header .anuncio {
+    width: 100%;
+    height: var(--header-anuncio-height);
+    padding: 0 30px;
+
+    background: var(--color1);
+}
+
+header .anuncio .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+header .anuncio .container p {
+    color: var(--color1-contrast);
+    font-family: manrope;
+    font-size: .80rem;
+    letter-spacing: 1px;
+
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header .anuncio .container .time {
+    display: flex;
+    gap: 3px;
+    margin: 0 20px;
+}
+
+header .anuncio .container .time span {
+    font-family: manrope;
+    font-size: .80rem;
+    color: var(--color2);
+}
+
+header .anuncio .container .time span.letter {
+    margin-right: 10px;
+    color: var(--color1-contrast);
+}
+
+header .anuncio .container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color3);
+    color: var(--color3-contrast);
+    padding: 11px 15px;
+    border-radius: 3px;
+    text-decoration: unset;
+    font-family: manrope;
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+header .anuncio .container a i {
+    font-size: .75rem;
+    margin-right: 3px;
+}
+
+header .anuncio .container a span {}
+
+@media (max-width:600px) {
+    header .anuncio .container .time {
+        display: none;
+    }
+}
+
+
+
+
+/*NAVBAR*/
+header .navbar {
+    height: var(--header-navbar-height);
+    background: transparent;
+    color: var(--color4-contrast);
+    padding: 0 20px;
+    border-bottom: solid 1px #25323c;
+}
+
+header .navbar.float {
+    background: var(--color4);
+}
+
+header .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header .navbar .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0;
+    margin-right: 20px;
+    color: var(--color4-contrast);
+    text-decoration: none;
+    cursor:pointer;
+}
+
+header .navbar .container .logo img {
+    width: var(--header-navbar-height);
+    height: 100%;
+    object-fit: contain;
+}
+
+header .navbar .container .logo span {
+    font-family: baloo;
+    font-size: 1.5rem;
+/*    letter-spacing: 1px;*/
+}
+
+header .navbar .container .menu {
+    display: flex;
+    height: 100%;
+    gap: 15px;
+    margin-right: auto;
+    list-style: none;
+}
+
+header .navbar .container .menu li {}
+
+header .navbar .container .menu li a span {}
+
+header .navbar .container .menu li a i {}
+
+
+
+header .navbar .container .menu li.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    font-family: manrope;
+    font-size: .92rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+header .navbar .container .menu li.option.active a,
+header .navbar .container .menu li.option a:hover {
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+header .navbar .container .menu li.option a {
+    opacity: 0.8;
+    color: var(--color4-contrast);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header .navbar .container .menu li.option a span {
+}
+
+header .navbar .container .menu li.option a i {
+    margin-left: 4px;
+    font-size: .8rem;
+}
+
+
+
+header .navbar .container .menu li.option:hover .submenu {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    opacity: 1;
+    border: none;
+    transition: 0.3s ease;
+}
+
+header .navbar .container .menu .submenu {
+    position: absolute;
+    top: calc(100% - 10px);
+    z-index: 1;
+    
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 0;
+    overflow: hidden;
+    background: var(--color4);
+    border: solid 2px #25323c !important;
+    border-radius: 5px;
+    
+    padding: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+header .navbar .container .menu .submenu .suboption {
+    white-space: nowrap;
+}
+
+header .navbar .container .menu .submenu .suboption span {
+    font-family: manrope;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+header .navbar .container .menu .submenu .suboption span i {}
+
+header .navbar .container .search {
+    
+}
+
+header .navbar .container .search button {
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+header .navbar .container .search button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+header .navbar .container .search button i {
+    font-size: 1.2rem;
+    color: var(--color4-contrast);
+}
+
+header .navbar .container .register {
+    margin-left: 30px;
+}
+
+header .navbar .container .register a {
+    color: var(--color4-contrast);
+    text-decoration: none;
+    background: var(--color1);
+    padding: 10px;
+    border-radius: 3px;
+    font-family: manrope;
+    font-size: .9rem;
+    letter-spacing: .3px;
+    transition: all 0.2s ease;
+}
+
+header .navbar .container .register a:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+header .navbar .container .register a span {}
+
+header .navbar .container .menu-mobile {
+    display: none;
+}
+
+header .navbar .container .menu-mobile button {}
+
+header .navbar .container .menu-mobile button i {}

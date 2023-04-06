@@ -1,0 +1,27 @@
+:root {
+    --header-anuncio-height: 0; /* Este dato va a variar dependiendo si existe el anuncio o no, eso cambiara con php*/
+    --header-navbar-height: 65px;
+    --header-height: calc(var(--header-anuncio-height) + var(--header-navbar-height));
+    --container-width: 1400px;
+}
+
+
+/* _____________ SCROLL _ STYLES ________________ */
+.scroll-style::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+    background: var(--primary_background);
+    border-radius: 7px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb:hover {
+    background: var(--primary_background_hover);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-style::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}

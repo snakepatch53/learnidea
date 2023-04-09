@@ -24,9 +24,11 @@
     </header>
 
     <main class="animate__animated animate__fadeIn">
+
         <slider>
             <?php include('./src/templates/public.component/slider.php') ?>
         </slider>
+
         <section class="section-1">
             <div class="container">
                 <h4>¿Que puedes aprender en <b>Learnidea</b>?</h4>
@@ -83,6 +85,31 @@
                 <span class="mini-msg">*Necesitas un correo electronico.</span>
             </div>
         </section>
+
+        <section class="section-2">
+            <div class="container">
+                <h4>¡No esperes mas, <b>aprende ahora</b>!</h4>
+                <span>Aprende a explotar tus habilidades y talentos, no te pierdas de la oportunidad de aprender de los mejores.</span>
+                <div class="select-section">
+                    <button class="item" id="cursos-section-anteriores" style="--border-color:#1292ef;">
+                        <img src="<?= $DATA['http_domain'] ?>public/img/section-anteriores.png" alt="Imagen anteriores cursos">
+                        <h5>Anteriores</h5>
+                        <p>Revisa los cursos que ya se han impartido, para que no te pierdas de nada.</p>
+                    </button>
+                    <button class="item active" id="cursos-section-proximos" style="--border-color:#e3627e;">
+                        <img src="<?= $DATA['http_domain'] ?>public/img/section-proximos.png" alt="Imagen proximos cursos">
+                        <h5>Proximos</h5>
+                        <p>Ahora tienes la oportunidad de ser parte de los cursos que se estan por impartir.</p>
+                    </button>
+                    <button class="item" id="cursos-section-activos" style="--border-color:#269144;">
+                        <img src="<?= $DATA['http_domain'] ?>public/img/section-activos.png" alt="Imagen de cursos activos">
+                        <h5>Activos</h5>
+                        <p>Mira que cursos se estan impartiendo en este momento, solo por tiempo limitado.</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer id="section-footer">

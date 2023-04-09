@@ -7,6 +7,8 @@ main {
     --color3-contrast: #ffffff;
     --color4: #1c6ccd;
     --color4-contrast: #ffffff;
+    --color5: #192229;
+    --color5-contrast: #ffffff;
 }
 
 section {
@@ -144,7 +146,7 @@ section .container {
 
 .section-1 .container .areas .item .image {
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     aspect-ratio: 2/2;
     margin-bottom: 10px;
     transition: all 0.2s ease;
@@ -222,4 +224,100 @@ section .container {
         grid-template-columns: repeat(1, 1fr);
         max-width: 450px;
     }
+}
+
+
+
+
+
+
+
+
+/*SECTION-2*/
+
+.section-2 {
+    background: var(--color5);
+}
+
+.section-2 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.section-2 .container h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: manrope;
+    color: var(--color5-contrast);
+}
+
+.section-2 .container h4 b {
+    color: var(--color1);
+
+}
+
+.section-2 .container span {
+    display: block;
+    color: #a4afb6;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    font-family: manrope;
+    margin: 25px 0;
+}
+
+.section-2 .container .select-section {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.section-2 .container .select-section .item {
+    background: #2b2c2e;
+    padding: 30px;
+    transition: all 0.2s ease;
+    border: 0;
+    border-top: 4px;
+    border-style: solid;
+    border-color: #dadcde;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section-2 .container .select-section .item.active,
+.section-2 .container .select-section .item:hover {
+    background: #212e36;
+    border-color: var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.section-2 .container .select-section .item.active img,
+.section-2 .container .select-section .item:hover img {
+    filter: contrast(1);
+}
+
+.section-2 .container .select-section .item img {
+    width: 100%;
+    max-width: 120px;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+    filter: contrast(0.3);
+    transition: all 0.2s ease;
+}
+
+.section-2 .container .select-section .item h5 {
+    font-size: 1.1rem;
+    font-family: manrope;
+    margin: 15px 0;
+    color: var(--color5-contrast);
+}
+
+.section-2 .container .select-section .item p {
+    color: #a4afb6;
+    font-family: manrope;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
 }

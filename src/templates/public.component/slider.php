@@ -1,7 +1,7 @@
 <div class="container">
     <div class="description">
         <h2>La tecnologia es el futuro</h2>
-        <h4>!Y tu lo eres junto a ella!</h4>
+        <h4>¡Y tu lo eres junto a ella!</h4>
         <p>Si puedes pensarlo, puedes programarlo</p>
         <a href="<?= $DATA['http_domain'] ?>register">Registrate y da el primer paso</a>
         <span>*Necesitas un correo electronico</span>

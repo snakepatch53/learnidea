@@ -27,27 +27,61 @@
         <slider>
             <?php include('./src/templates/public.component/slider.php') ?>
         </slider>
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorum consequatur non libero adipisci itaque vero suscipit officia velit aspernatur? Iste ipsum unde deleniti qui exercitationem corporis rem debitis quasi.</p>
-            <p>Ex debitis voluptatibus sed, nostrum illo minus sint minima amet tempora modi pariatur totam voluptas? Eius fugit doloribus dignissimos exercitationem cupiditate? Voluptatum odit beatae dicta sequi possimus asperiores magni sunt?</p>
-            <p>Voluptatum pariatur harum quia rerum tempora autem in maiores ex vero temporibus expedita consequatur blanditiis, doloremque veritatis sapiente laborum repellendus sequi, saepe sed dolore quisquam quae assumenda. Repudiandae, aspernatur quidem?</p>
-            <p>Nesciunt dolor odio eos! Ullam voluptatem ipsum nobis amet reiciendis impedit ex repudiandae optio aperiam, voluptatibus dolor eaque quod quidem error cupiditate facilis saepe beatae quaerat, hic pariatur aspernatur ratione!</p>
-            <p>Aperiam mollitia itaque dolorum, iste temporibus odio tenetur eum corporis amet fugit ipsam ipsa accusantium delectus odit architecto in facilis possimus voluptates aliquam, repellat est sint. Sunt harum eum exercitationem.</p>
-            <p>Ipsum laborum eum corrupti aperiam incidunt sapiente culpa velit tempore deserunt. Totam iure accusantium asperiores aut. Quae velit iusto alias, laborum vero dicta neque fugit sunt assumenda dolor quisquam eos.</p>
-            <p>Sunt nihil explicabo aliquid veniam iure, similique aliquam commodi dolorum? Adipisci exercitationem eveniet harum laudantium ipsam sed odio rerum libero explicabo maxime at placeat assumenda molestiae officia, tenetur incidunt inventore.</p>
-            <p>Quam dolorum, sunt quas eos nemo similique sequi necessitatibus cupiditate beatae. Distinctio incidunt labore aspernatur dolor eius error esse reiciendis rerum debitis praesentium fugit pariatur unde a, nobis omnis? Deleniti?</p>
-            <p>Aliquam animi accusantium nihil praesentium, nesciunt, dolorum id, nam assumenda reprehenderit sunt deserunt omnis labore ducimus fuga repellendus quod nostrum a maxime cum eveniet iure minima dolore. Eveniet, cum debitis?</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
-            <p>Quia corporis vero rerum assumenda dolores ab aperiam perferendis aspernatur sit libero optio esse nisi asperiores, consequuntur adipisci necessitatibus. Fuga inventore porro blanditiis. Necessitatibus nemo, voluptatibus voluptates totam iure sequi.</p>
+        <section class="section-1">
+            <div class="container">
+                <h4>¿Que puedes aprender en <b>Learnidea</b>?</h4>
+                <span>Certificados avalados por instituciones publicas y privadas.</span>
+                <a href="<?= $DATA['http_domain'] ?>cursos" class="content">
+                    <div class="description">
+                        <h5>Programacion, musica, fibra optica, educacion de educadores.</h5>
+                        <p>¡Domina areas en tendencia y conviertete en un experto! Estudia desde cero hasta experto, con cursos de programacion, musica, fibra optica, educacion de educadores, y mucho mas.</p>
+                    </div>
+                    <div class="image">
+                        <img src="<?= $DATA['http_domain'] ?>public/img/tecnologys.png" alt="">
+                    </div>
+                </a>
+                <div class="areas">
+                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/1" class="item">
+                        <div class="image">
+                            <img src="<?= $DATA['http_domain'] ?>public/img.areas/1.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h5>Programacion</h5>
+                            <p>¡Aprende a programar desde cero! domina los lenguajes de programacion mas usados en el mundo, como Java, C#, Python, PHP, JavaScript, y mucho mas.</p>
+                        </div>
+                    </a>
+                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/2" class="item">
+                        <div class="image">
+                            <img src="<?= $DATA['http_domain'] ?>public/img.areas/2.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h5>Musica</h5>
+                            <p>¡Aprende desde teoria musical hasta ser un experto en cualquier rama de la musica! domina la guitarra, piano, bateria, canto, y mucho mas.</p>
+                        </div>
+                    </a>
+                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/3" class="item">
+                        <div class="image">
+                            <img src="<?= $DATA['http_domain'] ?>public/img.areas/3.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h5>Fibra Optica</h5>
+                            <p>¡Aprende a instalar y configurar redes de fibra optica! domina habilidades de fibra optica, conectorizacion, empalmes, reparaciones, construccion de troncales, derivaciones y mucho mas.</p>
+                        </div>
+                    </a>
+                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/4" class="item">
+                        <div class="image">
+                            <img src="<?= $DATA['http_domain'] ?>public/img.areas/4.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h5>Educacion de Educadores</h5>
+                            <p>¡Aprende a ser un mejor educador! domina habilidades de educacion, conoce las mejores tecnicas de enseñanza, aprende a crear tus propios cursos, y mucho mas.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="<?= $DATA['http_domain'] ?>register" class="register">Empezar ahora</a>
+                <span class="mini-msg">*Necesitas un correo electronico.</span>
+            </div>
         </section>
     </main>
 

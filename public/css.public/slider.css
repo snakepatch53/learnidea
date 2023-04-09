@@ -1,0 +1,129 @@
+slider {
+    --color1: linear-gradient(90deg, #0d131b, #164986);
+    --color1-contrast: #ffffff;
+    --color2: #fcd683;
+    --color2-contrast: #ffffff;
+    --color3: #1c6ccd;
+    --color3-contrast: #ffffff;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*    height: calc(100vh - var(--header-height) - 200px);*/
+    height: auto;
+    padding: var(--container-padding);
+    background: var(--color1);
+}
+
+slider .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: var(--container-width);
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+slider .container .description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+slider .container .description h2 {
+    font-size: 3rem;
+    color: var(--color1-contrast);
+}
+
+slider .container .description h4 {
+    font-size: 2.5rem;
+    color: var(--color2);
+
+}
+
+slider .container .description p {
+    font-size: 1.1rem;
+    color: var(--color1-contrast);
+    font-family: manrope;
+    letter-spacing: 1px;
+}
+
+slider .container .description a {
+    background: var(--color3);
+    color: var(--color3-contrast);
+    text-decoration: unset;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    font-family: manrope;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+slider .container .description a:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+slider .container .description span {
+    color: #82aecd;
+    font-family: manrope;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+slider .container .swiper {
+    flex: 1;
+    width: 100%;
+    aspect-ratio: 3/2;
+    max-height: 400px;
+    overflow: hidden;
+    /*
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+*/
+    border-radius: 20px;
+    box-shadow: 0 0 100px 0 rgba(255, 255, 255, 0.22);
+}
+
+slider .container .swiper .swiper-wrapper {}
+
+slider .container .swiper .swiper-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+@media (max-width: 1200px) {
+
+    slider .container .description h2 {
+        font-size: 2rem;
+    }
+
+    slider .container .description h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    slider .container {
+        flex-direction: column;
+    }
+
+    slider .container .description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

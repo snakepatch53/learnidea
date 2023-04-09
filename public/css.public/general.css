@@ -1,8 +1,16 @@
 :root {
-    --header-anuncio-height: 0; /* Este dato va a variar dependiendo si existe el anuncio o no, eso cambiara con php*/
+    --header-anuncio-height: 0px;
+    /* Este dato va a variar dependiendo si existe el anuncio o no, eso cambiara con php*/
     --header-navbar-height: 65px;
     --header-height: calc(var(--header-anuncio-height) + var(--header-navbar-height));
     --container-width: 1400px;
+    --container-padding: 50px;
+}
+
+@media (max-width: 900px) {
+    :root {
+        --container-width: 750px;
+    }
 }
 
 

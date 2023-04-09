@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     :root {
         --header-anuncio-height: 50px;
     }
@@ -21,12 +21,13 @@
             <span>¡Inscripcion!</span>
         </a>
     </div>
-</div>
+</div> -->
 
-<nav class="navbar float">
+<nav class="navbar" id="topnavbar"><!-- class = float && open-menu  -->
     <div class="container">
         <a href="<?= $DATA['http_domain'] ?>" class="logo">
-            <img src="<?= $DATA['http_domain'] ?>public/img/logo_light.svg" alt="Logo">
+            <img class="logo_light" src="<?= $DATA['http_domain'] ?>public/img/logo_light.svg" alt="Logo">
+            <img class="logo_dark" src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Logo">
             <span>Learnidea</span>
         </a>
         <ul class="menu">
@@ -34,13 +35,14 @@
             <li class="option"><a href="<?= $DATA['http_domain'] ?>sobre"><span>Nosotros</span></a></li>
             <li class="option"><a href="<?= $DATA['http_domain'] ?>contato"><span>Contato</span></a></li>
             <li class="option">
-                <a><span>Submenu</span><i class="fas fa-angle-down"></i></a>
+                <a class="btn-list"><span>Submenu</span><i class="fas fa-angle-down"></i></a>
                 <ul class="submenu">
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>submenu1"><span>Subopcion 1</span></a></li>
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>submenu2"><span>Subopcion 2</span></a></li>
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>submenu3"><span>Subopcion 3</span></a></li>
                 </ul>
             </li>
+            <li class="option"><a href="<?= $DATA['http_domain'] ?>contato"><span>Contato</span></a></li>
         </ul>
 
         <div class="search">
@@ -56,7 +58,7 @@
         </div>
 
         <div class="menu-mobile">
-            <button>
+            <button id="btn-mobile-toggle-navbar">
                 <i class="fas fa-bars"></i>
             </button>
         </div>

@@ -115,17 +115,17 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
-                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/1.jpg" alt="Imagen del curso 1">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.cursos/1.png" alt="Imagen del curso 1">
                             </a>
                         </li>
                         <li class="splide__slide">
                             <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
-                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/2.jpg" alt="Imagen del curso 2">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.cursos/2.png" alt="Imagen del curso 2">
                             </a>
                         </li>
                         <li class="splide__slide">
                             <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
-                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/3.jpg" alt="Imagen del curso 3">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.cursos/3.png" alt="Imagen del curso 3">
                             </a>
                         </li>
                     </ul>
@@ -136,17 +136,17 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
-                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/1.jpg" alt="Imagen del curso 1">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.cursos/1.png" alt="Imagen del curso 1">
                             </a>
                         </li>
                         <li class="splide__slide">
                             <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
-                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/2.jpg" alt="Imagen del curso 2">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.cursos/2.png" alt="Imagen del curso 2">
                             </a>
                         </li>
                         <li class="splide__slide">
                             <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
-                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/3.jpg" alt="Imagen del curso 3">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.cursos/3.png" alt="Imagen del curso 3">
                             </a>
                         </li>
                     </ul>

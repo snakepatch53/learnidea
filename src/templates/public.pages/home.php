@@ -33,7 +33,7 @@
                 <span>Certificados avalados por instituciones publicas y privadas.</span>
                 <a href="<?= $DATA['http_domain'] ?>cursos" class="content">
                     <div class="description">
-                        <h5>Programacion, musica, fibra optica, educacion de educadores.</h5>
+                        <h5>Programacion, música, fibra óptica, educacion de educadores.</h5>
                         <p>¡Domina areas en tendencia y conviertete en un experto! Estudia desde cero hasta experto, con cursos de programacion, musica, fibra optica, educacion de educadores, y mucho mas.</p>
                     </div>
                     <div class="image">
@@ -47,7 +47,7 @@
                         </div>
                         <div class="description">
                             <h5>Programacion</h5>
-                            <p>¡Aprende a programar desde cero! domina los lenguajes de programacion mas usados en el mundo, como Java, C#, Python, PHP, JavaScript, y mucho mas.</p>
+                            <p>¡Aprende a programar desde cero! domina los lenguajes de programación mas usados en el mundo, como Java, C#, Python, PHP, JavaScript, y mucho mas.</p>
                         </div>
                     </a>
                     <a href="<?= $DATA['http_domain'] ?>cursos/areas/2" class="item">
@@ -55,7 +55,7 @@
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/2.png" alt="">
                         </div>
                         <div class="description">
-                            <h5>Musica</h5>
+                            <h5>Música</h5>
                             <p>¡Aprende desde teoria musical hasta ser un experto en cualquier rama de la musica! domina la guitarra, piano, bateria, canto, y mucho mas.</p>
                         </div>
                     </a>
@@ -64,7 +64,7 @@
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/3.png" alt="">
                         </div>
                         <div class="description">
-                            <h5>Fibra Optica</h5>
+                            <h5>Fibra óptica</h5>
                             <p>¡Aprende a instalar y configurar redes de fibra optica! domina habilidades de fibra optica, conectorizacion, empalmes, reparaciones, construccion de troncales, derivaciones y mucho mas.</p>
                         </div>
                     </a>
@@ -73,14 +73,14 @@
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/4.png" alt="">
                         </div>
                         <div class="description">
-                            <h5>Educacion de Educadores</h5>
+                            <h5>Educación de Educadores</h5>
                             <p>¡Aprende a ser un mejor educador! domina habilidades de educacion, conoce las mejores tecnicas de enseñanza, aprende a crear tus propios cursos, y mucho mas.</p>
                         </div>
                     </a>
                 </div>
 
                 <a href="<?= $DATA['http_domain'] ?>register" class="register">Empezar ahora</a>
-                <span class="mini-msg">*Necesitas un correo electronico.</span>
+                <span class="mini-msg">*Necesitas un correo electrónico.</span>
             </div>
         </section>
 

@@ -17,7 +17,7 @@
             <span class="letter">S</span>
             <span class="message"></span>
         </div>
-        <a href="<?= $DATA['http_domain'] ?>inscripcion/12">
+        <a href="<?= $DATA['http_domain'] ?>cursos/1">
             <i class="fas fa-star"></i>
             <span>¡Inscripcion!</span>
         </a>

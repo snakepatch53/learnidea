@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     :root {
         --header-anuncio-height: 50px;
     }
@@ -22,7 +22,7 @@
             <span>¡Inscripcion!</span>
         </a>
     </div>
-</div>
+</div> -->
 
 <nav class="navbar" id="topnavbar"><!-- class = float && open-menu  -->
     <div class="container">

@@ -11,13 +11,13 @@ btn_toggle_navbar.onclick = () => $navbarTop.classList.toggle("open-menu");
 
 // FUNCION DE HORA DEL ANUNCIO
 const $time = document.querySelector("#anuncio-time");
-const $time_day = $time.querySelector(".time-day");
-const $time_hour = $time.querySelector(".time-hour");
-const $time_minute = $time.querySelector(".time-minute");
-const $time_second = $time.querySelector(".time-second");
-const $message = $time.querySelector(".message");
 
-if ($time_day && $time_hour && $time_minute && $time_second) {
+if ($time) {
+    const $time_day = $time.querySelector(".time-day");
+    const $time_hour = $time.querySelector(".time-hour");
+    const $time_minute = $time.querySelector(".time-minute");
+    const $time_second = $time.querySelector(".time-second");
+    const $message = $time.querySelector(".message");
     let time_day = parseInt($time_day.innerText);
     let time_hour = parseInt($time_hour.innerText);
     let time_minute = parseInt($time_minute.innerText);

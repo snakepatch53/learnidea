@@ -1,4 +1,4 @@
-<!-- <style>
+<style>
     :root {
         --header-anuncio-height: 50px;
     }
@@ -22,7 +22,7 @@
             <span>¡Inscripcion!</span>
         </a>
     </div>
-</div> -->
+</div>
 
 <nav class="navbar" id="topnavbar"><!-- class = float && open-menu  -->
     <div class="container">
@@ -51,8 +51,11 @@
             </button>
         </div>
 
-        <div class="register">
-            <a href="<?= $DATA['http_domain'] ?>">
+        <div class="session-buttons">
+            <a class="btn-login" href="<?= $DATA['http_domain'] ?>login">
+                <span>Iniciar sesion</span>
+            </a>
+            <a href="<?= $DATA['http_domain'] ?>register">
                 <span>Registrarse</span>
             </a>
         </div>

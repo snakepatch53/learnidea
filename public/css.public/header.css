@@ -300,11 +300,13 @@ header .navbar .container .search button i {
     color: var(--color4-contrast);
 }
 
-header .navbar .container .register {
+header .navbar .container .session-buttons {
+    display: flex;
+    gap: 5px;
     margin-left: 30px;
 }
 
-header .navbar .container .register a {
+header .navbar .container .session-buttons a {
     color: var(--color4-contrast);
     text-decoration: none;
     background: var(--color1);
@@ -316,12 +318,23 @@ header .navbar .container .register a {
     transition: all 0.2s ease;
 }
 
-header .navbar .container .register a:hover {
+header .navbar .container .session-buttons a:hover {
     opacity: 0.8;
     transition: all 0.2s ease;
 }
 
-header .navbar .container .register a span {}
+header .navbar .container .session-buttons a span {}
+
+header .navbar .container .session-buttons a.btn-login {
+    background: transparent;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+header .navbar .container .session-buttons a.btn-login:hover {
+    background: #687782;
+    color: #ffffff;
+}
 
 header .navbar .container .menu-mobile {
     display: none;
@@ -454,7 +467,7 @@ header .navbar .container .menu-mobile button i {
         margin-left: auto;
     }
 
-    header .navbar .container .register {
+    header .navbar .container .session-buttons {
         --space-right: 20px;
         margin-left: 0px;
         /*        display: none;*/
@@ -469,18 +482,19 @@ header .navbar .container .menu-mobile button i {
         transition: all 0.2s ease;
     }
 
-    header .navbar.open-menu .container .register {
+    header .navbar.open-menu .container .session-buttons {
         max-width: calc(var(--menu-max-width) - var(--space-right) * 2);
         opacity: 1;
         transition: all 0.3s ease;
     }
 
-    header .navbar.open-menu .container .register a {
-        padding: 15px 10px;
+    header .navbar.open-menu .container .session-buttons a {
+        padding: 10px;
         transition: all 0.3s ease;
     }
 
-    header .navbar .container .register a {
+    header .navbar .container .session-buttons a {
+        flex:1;
         display: block;
         padding: 0;
         text-align: center;
@@ -494,7 +508,7 @@ header .navbar .container .menu-mobile button i {
 
 
 @media(max-width:400px) {
-    header .navbar.open-menu .container .register {
+    header .navbar.open-menu .container .session-buttons {
         max-width: calc(100% - var(--space-right) * 2);
     }
 }

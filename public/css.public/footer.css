@@ -61,6 +61,7 @@ footer .cards .item p {
     /*    text-align: justify;*/
     max-height: 200px;
     overflow: hidden;
+    user-select: text;
 }
 
 footer .cards .item .mas {
@@ -109,6 +110,7 @@ footer .copy p {
     color: var(--color1-contrast2);
     font-family: manrope;
     font-size: 0.8rem;
+    user-select: text;
 }
 
 footer .copy .redes {

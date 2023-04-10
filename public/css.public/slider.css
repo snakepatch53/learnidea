@@ -41,11 +41,13 @@ slider .container .description {
 slider .container .description h2 {
     font-size: 3rem;
     color: var(--color1-contrast);
+    user-select: text;
 }
 
 slider .container .description h4 {
     font-size: 2.5rem;
     color: var(--color2);
+    user-select: text;
 
 }
 
@@ -54,6 +56,7 @@ slider .container .description p {
     color: var(--color1-contrast);
     font-family: manrope;
     letter-spacing: 1px;
+    user-select: text;
 }
 
 slider .container .description a {

@@ -9,6 +9,8 @@ header {
     --color3-contrast: #063728;
     --color4: #192229;
     --color4-contrast: #ffffff;
+    --color5: #002f21;
+    --color5-contrast: #ffffff;
 
     display: flex;
     flex-direction: column;
@@ -51,6 +53,7 @@ header .anuncio .container p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    user-select: text;
 }
 
 header .anuncio .container .time {
@@ -68,6 +71,23 @@ header .anuncio .container .time span {
 header .anuncio .container .time span.letter {
     margin-right: 10px;
     color: var(--color1-contrast);
+}
+
+header .anuncio .container .time.time-out span {
+    display: none;
+}
+
+header .anuncio .container .time.time-out span.message {
+    display: block;
+}
+
+header .anuncio .container .time span.message {
+    font-family: manrope;
+/*    font-size: 1rem;*/
+    font-weight: bold;
+    color: var(--color1-contrast);
+    letter-spacing: 1px;
+    user-select: text;
 }
 
 header .anuncio .container a {

@@ -6,15 +6,16 @@
 <div class="anuncio">
     <div class="container">
         <p>¡Programación Orientada a objetos!</p>
-        <div class="time">
-            <span class="time-day">4</span>
+        <div class="time" id="anuncio-time">
+            <span class="time-day">8</span>
             <span class="letter">D</span>
-            <span class="time-hour">02</span>
+            <span class="time-hour">00</span>
             <span class="letter">H</span>
-            <span class="time-minute">03</span>
+            <span class="time-minute">00</span>
             <span class="letter">M</span>
-            <span class="time-second">05</span>
+            <span class="time-second">00</span>
             <span class="letter">S</span>
+            <span class="message"></span>
         </div>
         <a href="<?= $DATA['http_domain'] ?>inscripcion/12">
             <i class="fas fa-star"></i>

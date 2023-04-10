@@ -92,6 +92,7 @@ section .container {
     /*    text-align: justify;*/
     line-height: 1.4rem;
     letter-spacing: 0.4px;
+    user-select: text;
 }
 
 .section-1 .container .content .image {
@@ -179,6 +180,7 @@ section .container {
     font-family: manrope;
     color: #a4afb6;
     line-height: 1.4rem;
+    user-select: text;
 }
 
 .section-1 .container .areas .item:hover {
@@ -269,6 +271,7 @@ section .container {
     letter-spacing: 0.4px;
     font-family: manrope;
     margin: 25px 0;
+    user-select: text;
 }
 
 .section-2 .container .select-section {
@@ -322,6 +325,7 @@ section .container {
     font-family: manrope;
     font-size: 0.9rem;
     line-height: 1.8rem;
+    user-select: text;
 }
 
 

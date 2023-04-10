@@ -4,8 +4,6 @@
 <head>
     <?php include('./src/templates/public.component/head.php') ?>
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/css.public/home.css">
-
-    <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/library.general/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/css.public/slider.css">
 
     <style>
@@ -110,6 +108,53 @@
             </div>
         </section>
 
+
+        <section class="section-3">
+            <div class="splide slider-cursos" id="slider-cursos-1">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/1.jpg" alt="Imagen del curso 1">
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/2.jpg" alt="Imagen del curso 2">
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/3.jpg" alt="Imagen del curso 3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="splide slider-cursos" id="slider-cursos-2">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/1.jpg" alt="Imagen del curso 1">
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/2.jpg" alt="Imagen del curso 2">
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="<?= $DATA['http_domain'] ?>cursos/{{ID}}">
+                                <img src="<?= $DATA['http_domain'] ?>public/img.slider/3.jpg" alt="Imagen del curso 3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="<?= $DATA['http_domain'] ?>cursos" class="cursos">Ver todos los cursos</a>
+        </section>
+
     </main>
 
     <footer id="section-footer">
@@ -119,8 +164,8 @@
 
 <foot>
     <?php include('./src/templates/public.component/foot.php') ?>
-    <script src="<?= $DATA['http_domain'] ?>public/library.general/swiper/swiper-bundle.min.js"></script>
     <script src="<?= $DATA['http_domain'] ?>public/js.public/slider.js"></script>
+    <script src="<?= $DATA['http_domain'] ?>public/js.public/home.js"></script>
 </foot>
 
 </html>

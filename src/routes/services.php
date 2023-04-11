@@ -5,6 +5,7 @@ $radapter = new RAdapter($router, $_TEMPLATE_SERVICES_PATH, $_ENV['HTTP_DOMAIN']
 // CONFIGURATION
 $radapter->getHTML('/services/configuration', 'configuration');
 
+
 // // INFO
 // $radapter->post('/services/info/select', fn (...$args) => InfoService::select(...$args));
 // $radapter->post('/services/info/update', fn () => middlewareSessionServicesLogin(), fn (...$args) => InfoService::update(...$args));

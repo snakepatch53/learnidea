@@ -1,3 +1,6 @@
+//ATAJOS DE TECLADO
+
+// FUNCIONAMIENTO DEL HEADER CON EL SCROLL
 const $navbarTop = document.getElementById("topnavbar");
 const btn_toggle_navbar = document.getElementById("btn-mobile-toggle-navbar");
 

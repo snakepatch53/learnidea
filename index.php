@@ -1,8 +1,8 @@
 <?php
 //show errors
-//ini_set('display_errors', 1);
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ob_start();
 session_start();
 // definimos la zona horaria
@@ -34,9 +34,9 @@ $dotenv->load();
 $router = new \Bramus\Router\Router();
 
 // declaramos las rutas
-require __DIR__ . '/src/routes/services.php';
+// require __DIR__ . '/src/routes/services.php';
 require __DIR__ . '/src/routes/public.php';
-require __DIR__ . '/src/routes/panel.php';
+// require __DIR__ . '/src/routes/panel.php';
 
 // iniciamos el router xd
 $router->run();

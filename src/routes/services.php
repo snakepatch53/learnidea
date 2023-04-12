@@ -6,6 +6,13 @@ $radapter = new RAdapter($router, $_TEMPLATE_SERVICES_PATH, $_ENV['HTTP_DOMAIN']
 $radapter->getHTML('/services/configuration', 'configuration');
 
 
+// SLIDER IMG
+$radapter->post('/services/slider_imgs/select', fn (...$args) => SliderImgService::select(...$args));
+$radapter->post('/services/slider_imgs/insert', fn (...$args) => SliderImgService::insert(...$args));
+$radapter->post('/services/slider_imgs/update', fn (...$args) => SliderImgService::update(...$args));
+$radapter->post('/services/slider_imgs/delete', fn (...$args) => SliderImgService::delete(...$args));
+
+
 // // INFO
 // $radapter->post('/services/info/select', fn (...$args) => InfoService::select(...$args));
 // $radapter->post('/services/info/update', fn () => middlewareSessionServicesLogin(), fn (...$args) => InfoService::update(...$args));

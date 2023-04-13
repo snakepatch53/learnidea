@@ -33,14 +33,15 @@
         </a>
         <ul class="menu">
             <li class="option"><a href="<?= $DATA['http_domain'] ?>"><span>Home</span></a></li>
-            <li class="option">
+            <li class="option"><a href="<?= $DATA['http_domain'] ?>cursos"><span>Cursos</span></a></li>
+            <!-- <li class="option">
                 <a class="btn-list"><span>Cursos</span><i class="fas fa-angle-down"></i></a>
                 <ul class="submenu">
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos/1"><span>Curso 1</span></a></li>
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos/2"><span>Curso 2</span></a></li>
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos/3"><span>Curso 3</span></a></li>
                 </ul>
-            </li>
+            </li> -->
             <li class="option"><a href="<?= $DATA['http_domain'] ?>nosotros"><span>Nosotros</span></a></li>
             <li class="option"><a href="<?= $DATA['http_domain'] ?>contatos"><span>Contatos</span></a></li>
         </ul>

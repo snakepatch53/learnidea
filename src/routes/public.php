@@ -40,3 +40,6 @@ $radapter->getHTML('/', 'home', function ($DATA) {
     //     'basic_plan_price' => $basic_plan_price
     // ];
 });
+
+
+$radapter->getHTML('/cursos', 'cursos');

@@ -5,14 +5,6 @@
     <?php include('./src/templates/public.component/head.php') ?>
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/css.public/home.css">
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/css.public/slider.css">
-
-    <style>
-        :root {
-            --background_card_plan: url('<?= $DATA['http_domain'] ?>public/img/img1.jpg');
-            --url_bg_wave_top: url('<?= $DATA['http_domain'] ?>public/img/bg_wave_top.svg');
-            --url_bg_wave_bottom: url('<?= $DATA['http_domain'] ?>public/img/bg_wave_bottom.svg');
-        }
-    </style>
 </head>
 
 <body>

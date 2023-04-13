@@ -1,0 +1,154 @@
+main {
+    --color1: #12293a;
+    --color1-contrast: #ffffff;
+    --color2: #52b0f4;
+    --color2-contrast: #ffffff;
+    --color3: #ffc240;
+    --color3-contrast: #483207;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--container-padding);
+}
+
+section .container {
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+/*SECTION - FRONTPAGE*/
+.section-frontpage {
+    position: relative;
+    background: var(--color1);
+    padding: calc(var(--header-navbar-height) + 30px) var(--container-padding);
+}
+
+.section-frontpage:before,
+.section-frontpage:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: '';
+}
+
+.section-frontpage:before {
+    background-image: var(--bg-header-img);
+    background-size: cover;
+    z-index: 10;
+}
+
+.section-frontpage:after {
+    background-image: linear-gradient(90deg, var(--color1) 50%, transparent);
+    z-index: 20;
+}
+
+.section-frontpage .container {
+    display: flex;
+}
+
+.section-frontpage .container .item {
+    flex: 1;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /*    max-height: 300px;*/
+    aspect-ratio: 3/1;
+}
+
+.section-frontpage .container .item.info {}
+
+.section-frontpage .container .item h2 {
+    font-size: 2.5rem;
+    font-family: manrope;
+    color: var(--color1-contrast);
+
+}
+
+.section-frontpage .container .item span {
+    font-size: 1.3rem;
+    font-family: manrope;
+    color: var(--color2);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-frontpage .container .item a {
+    background: var(--color3);
+    color: var(--color3-contrast);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 15px;
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .container .item a:hover {
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .container .item .img-frontpage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width: 1000px) {
+
+    .section-frontpage .container .item h2 {
+        font-size: 2rem;
+
+    }
+
+    .section-frontpage .container .item span {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-frontpage:after {
+        background-image: linear-gradient(180deg, var(--color1) 50%, transparent);
+    }
+
+    .section-frontpage .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section-frontpage .container .item {
+        gap: 10px;
+    }
+
+    .section-frontpage .container .item h2 {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    .section-frontpage .container .item span {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .section-frontpage .container .item .img-frontpage {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .section-frontpage .container .item a {
+        margin: auto;
+    }
+}

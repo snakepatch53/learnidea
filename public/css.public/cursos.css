@@ -5,6 +5,8 @@ main {
     --color2-contrast: #ffffff;
     --color3: #ffc240;
     --color3-contrast: #483207;
+    --color4: #1b2831;
+    --color4-contrast: #ffffff;
 
 }
 
@@ -150,5 +152,121 @@ section .container {
 
     .section-frontpage .container .item a {
         margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*SECTION - CURSOS*/
+.section-cursos {
+    width: 100%;
+    background: var(--color4);
+
+}
+
+.section-cursos .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-cursos .container h3 {
+    font-family: manrope;
+    color: var(--color4-contrast);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.section-cursos .slider-cursos {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 9/1;
+    margin-bottom: 60px;
+}
+
+.section-cursos .slider-cursos .splide__slide,
+.section-cursos .slider-cursos .splide__list,
+.section-cursos .slider-cursos .splide__track {
+    width: 100%;
+    height: 100%;
+}
+
+.section-cursos .slider-cursos .splide__slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.section-cursos .slider-cursos .splide__slide:hover a img {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.section-cursos .slider-cursos .splide__arrow {
+    background: var(--color4);
+    opacity: 1;
+    width: 3em;
+    height: 3em;
+}
+
+.section-cursos .slider-cursos .splide__arrow svg {
+    fill: var(--color2);
+    font-size: 1rem;
+}
+
+
+
+.section-cursos .slider-cursos .splide__slide a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.section-cursos .slider-cursos .splide__slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+
+
+@media (max-width: 1100px) {
+    .section-cursos .slider-cursos {
+        aspect-ratio: 7/1;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .section-cursos .slider-cursos {
+        aspect-ratio: 16/3;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-cursos .slider-cursos {
+        aspect-ratio: 7/2;
+    }
+}
+
+@media (max-width: 350px) {
+    .section-cursos .slider-cursos {
+        aspect-ratio: 5/3;
     }
 }

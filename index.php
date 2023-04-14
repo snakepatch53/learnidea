@@ -21,7 +21,6 @@ require_once(__DIR__ . '/src/functions/middlewares.php');
 require_once('./src/dao/SliderImgDao.php');
 
 
-
 // cargamos los servicios para el web service (WEB SERVICE)
 require_once('./src/services/slider_img.service.php');
 

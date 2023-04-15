@@ -1,0 +1,233 @@
+header .navbar {
+    /*    background: var(--color4);*/
+}
+
+main {
+    --color1: #063251;
+    --color1-contrast: #ffffff;
+    --color1-contrast2: #82aecd;
+    --color2: #192229;
+    --color2-contrast: #d1d1d1;
+    --color2-contrast2: #60a8ff;
+    --color2-contrast3: #b7c1c8;
+    --color3: #0b5e9a;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--container-padding);
+}
+
+section .container {
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+/*SECTION-FRONTPAGE1*/
+
+.section-frontpage {
+    background-image: linear-gradient(90deg, var(--color3), var(--color1) 20%, var(--color1) 80%, var(--color3));
+}
+
+.section-frontpage1 {
+    /*    padding-top: calc(var(--header-navbar-height) + var(--container-padding));*/
+    padding-top: var(--header-navbar-height);
+    /*    background: var(--color1);*/
+}
+
+.section-frontpage2 {
+    /*    background: var(--color3);*/
+    /*    background-image: linear-gradient(90deg, var(--color3), var(--color1) 40%);*/
+}
+
+
+.section-frontpage .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-frontpage .logo {
+    width: 100%;
+    max-width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.section-frontpage .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-frontpage .icono {
+    margin-bottom: 10px;
+}
+
+.section-frontpage .icono i {
+    font-size: 2rem;
+    color: var(--color1-contrast);
+}
+
+.section-frontpage h2 {
+    text-align: center;
+    color: var(--color1-contrast);
+    font-family: manrope;
+    font-size: 2rem;
+    user-select: text;
+}
+
+.section-frontpage p {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    color: var(--color1-contrast2);
+    font-family: manrope;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    user-select: text;
+}
+
+
+/*SECTION-TEAM*/
+.section-team {
+    background: var(--color2);
+    padding: 100px var(--container-padding);
+}
+
+.section-team .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.section-team .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    height: 100%;
+    text-decoration: none;
+}
+
+.section-team .item:hover img {
+    box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
+}
+
+.section-team .item .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.section-team .item .img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.section-team .item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-team .item .info h3 {
+    color: var(--color2-contrast);
+    text-align: center;
+    font-family: manrope;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.section-team .item .info span {
+    color: var(--color2-contrast2);
+    text-align: center;
+    font-family: manrope;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.section-team .item .info p {
+    font-size: 0.7rem;
+    font-family: manrope;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--color2-contrast3);
+}
+
+@media(max-width: 1000px) {
+    .section-team .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .section-team .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/*SECTION - CONCEPTOS*/
+
+.section-concepts {
+    background: var(--color2);
+    padding: 100px var(--container-padding);
+}
+
+.section-concepts .container {
+    display: flex;
+    gap: 50px;
+}
+
+.section-concepts .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-concepts .item h3 {
+    font-size: 1rem;
+    font-family: manrope;
+    text-align: center;
+    color: var(--color2-contrast);
+}
+
+.section-concepts .item p {
+    font-size: 0.9rem;
+    font-family: manrope;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: var(--color2-contrast3);
+    user-select: text;
+}
+
+
+@media (max-width: 900px) {
+
+    .section-concepts .container {
+        flex-direction: column;
+    }
+}

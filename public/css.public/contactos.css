@@ -1,0 +1,321 @@
+header .navbar {
+    /*    background: var(--color4);*/
+}
+
+main {
+    --color1: #063251;
+    --color1-contrast: #ffffff;
+    --color1-contrast2: #82aecd;
+    --color2: #192229;
+    --color2-contrast: #d1d1d1;
+    --color2-contrast2: #60a8ff;
+    --color2-contrast3: #b7c1c8;
+    --color3: #0b5e9a;
+    --color3-contrast: #ffffff;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*    padding: var(--container-padding);*/
+    padding: 50px var(--container-padding);
+}
+
+section .container {
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+/*SECTION-FRONTPAGE1*/
+
+.section-frontpage {
+    background-image: linear-gradient(90deg, var(--color3), var(--color1) 20%, var(--color1) 80%, var(--color3));
+}
+
+.section-frontpage1 {
+/*        padding-top: calc(var(--header-navbar-height) + var(--container-padding)) !important;*/
+    padding-top: var(--header-navbar-height);
+    /*    background: var(--color1);*/
+}
+
+.section-frontpage2 {
+    /*    background: var(--color3);*/
+    /*    background-image: linear-gradient(90deg, var(--color3), var(--color1) 40%);*/
+}
+
+
+.section-frontpage .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-frontpage .logo {
+    width: 100%;
+    max-width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.section-frontpage .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-frontpage .icono {
+    margin-bottom: 10px;
+}
+
+.section-frontpage .icono i {
+    font-size: 2rem;
+    color: var(--color1-contrast);
+}
+
+.section-frontpage h2 {
+    text-align: center;
+    color: var(--color1-contrast);
+    font-family: manrope;
+    font-size: 2rem;
+    user-select: text;
+}
+
+.section-frontpage p {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    color: var(--color1-contrast2);
+    font-family: manrope;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    user-select: text;
+}
+
+
+
+/*SECTION - REDES SOCIALES*/
+
+.section-social {
+    background: var(--color2);
+    padding: 100px var(--container-padding);
+}
+
+.section-social .items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+}
+
+.section-social .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    height: 100px;
+    gap: 10px;
+    margin: auto;
+    color: var(--color2-contrast3);
+    transition: all 0.2s ease;
+}
+
+.section-social .item:hover {
+    color: var(--social-color);
+    background: var(--color2-contrast);
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px var(--social-color);
+    transition: all 0.2s ease;
+}
+
+.section-social .item:hover span {
+    width: auto;
+    opacity: 1;
+}
+
+.section-social .item:hover i {
+    font-size: 1.5rem;
+}
+
+.section-social .item span {
+    display: block;
+    font-family: manrope;
+    font-size: 0.9rem;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.section-social .item i {
+    transition: all 0.2s ease;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 1000px) {
+    .section-social .items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .section-social .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .section-social .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .section-social .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+/*SECTION FORMULARIO*/
+
+.section-form {
+    background: var(--color2);
+    padding: 100px var(--container-padding);
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.message-form h4 {
+    text-align: center;
+    font-family: manrope;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--color2-contrast2);
+}
+
+.message-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.message-form form textarea,
+.message-form form input {
+    padding: 15px 20px;
+    /*    background: var(--color2-contrast3);*/
+    border-radius: 3px;
+    font-family: manrope;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.message-form form .msg {
+    text-align: center;
+    height: 25px;
+    font-family: manrope;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #219fdf;
+}
+
+.message-form form .msg.error {
+    color: #e33f31;
+}
+
+.message-form form .msg.success {
+    color: #2aa64b;
+}
+
+.message-form form .msg.warnning {
+    color: #ecb718;
+}
+
+.message-form form .msg,
+.message-form form button,
+.message-form form textarea {
+    grid-column: 1/3;
+}
+
+.message-form form button {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    padding: 15px;
+    color: var(--color3-contrast);
+    font-size: 0.9rem;
+    font-family: manrope;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    background: var(--color3);
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color3) 0%, var(--color3) 48%, var(--color1) 100%);
+    background-size: 300% 100%;
+    animation: contact-form-button-gradient-animation 5s ease infinite;
+
+    transition: all 0.2s ease;
+}
+
+
+@keyframes contact-form-button-gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.message-form form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    background-position: 50%;
+    animation: none;
+    transition: all 0.2s ease;
+}
+
+
+@media (max-width: 600px) {
+    .message-form form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .message-form form .msg,
+    .message-form form button,
+    .message-form form textarea {
+        grid-column: unset;
+    }
+}
+
+@media (max-width: 500px) {
+    .message-form form button {
+        max-width: unset;
+    }
+}

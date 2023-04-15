@@ -44,3 +44,4 @@ $radapter->getHTML('/', 'home', function ($DATA) {
 
 $radapter->getHTML('/cursos', 'cursos');
 $radapter->getHTML('/nosotros', 'nosotros');
+$radapter->getHTML('/contactos', 'contactos');

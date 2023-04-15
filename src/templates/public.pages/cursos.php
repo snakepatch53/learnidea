@@ -34,8 +34,7 @@
 
         <section class="section-cursos">
             <div class="container">
-
-                <h3>🔥 Cursos próximos</h3>
+                <h3 id="section-cursos-proximos">🔥 Cursos próximos</h3>
                 <div class="splide slider-cursos" id="slider-splide-cursos-proximos">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -58,7 +57,7 @@
                     </div>
                 </div>
 
-                <h3>✨ Cursos concluidos</h3>
+                <h3 id="section-cursos-concluidos">✨ Cursos concluidos</h3>
                 <div class="splide slider-cursos" id="slider-splide-cursos-anteriores">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -81,7 +80,7 @@
                     </div>
                 </div>
 
-                <h3>🎉 Cursos en progreso</h3>
+                <h3 id="section-cursos-activos">🎉 Cursos en progreso</h3>
                 <div class="splide slider-cursos" id="slider-splide-cursos-activos">
                     <div class="splide__track">
                         <ul class="splide__list">

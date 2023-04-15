@@ -74,7 +74,7 @@
 
 
 
-        <section class="section-frontpage section-frontpage2" id="section-redes-sociales">
+        <section class="section-frontpage section-frontpage2" id="section-formulario">
             <div class="container">
                 <div class="icono">
                     <i class="fas fa-envelope"></i>

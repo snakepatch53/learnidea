@@ -33,25 +33,29 @@
         </a>
         <ul class="menu">
             <li class="option"><a href="<?= $DATA['http_domain'] ?>"><span>Home</span></a></li>
-            <li class="option"><a href="<?= $DATA['http_domain'] ?>cursos"><span>Cursos</span></a></li>
-            <!-- <li class="option">
-                <a class="btn-list"><span>Cursos</span><i class="fas fa-angle-down"></i></a>
-                <ul class="submenu">
-                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos/1"><span>Curso 1</span></a></li>
-                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos/2"><span>Curso 2</span></a></li>
-                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos/3"><span>Curso 3</span></a></li>
-                </ul>
-            </li> -->
+            <!-- <li class="option"><a href="<?= $DATA['http_domain'] ?>cursos"><span>Cursos</span></a></li> -->
             <li class="option">
-                <!-- <a href="<?= $DATA['http_domain'] ?>nosotros"><span>Nosotros</span></a> -->
+                <a class="btn-list" href="<?= $DATA['http_domain'] ?>cursos/"><span>Cursos</span><i class="fas fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos#section-cursos-proximos"><span>Próximos</span></a></li>
+                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos#section-cursos-concluidos"><span>Concluidos</span></a></li>
+                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>cursos#section-cursos-activos"><span>En progreso</span></a></li>
+                </ul>
+            </li>
+            <li class="option">
                 <a class="btn-list" href="<?= $DATA['http_domain'] ?>nosotros/"><span>Nosotros</span><i class="fas fa-angle-down"></i></a>
                 <ul class="submenu">
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-team"><span>Equipo</span></a></li>
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-conceptos"><span>Conceptos</span></a></li>
-                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-redes-sociales"><span>Redes sociales</span></a></li>
                 </ul>
             </li>
-            <li class="option"><a href="<?= $DATA['http_domain'] ?>contactos"><span>Contactos</span></a></li>
+            <li class="option">
+                <a class="btn-list" href="<?= $DATA['http_domain'] ?>contactos/"><span>Contactos</span><i class="fas fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>contactos/#section-redes-sociales"><span>Redes sociales</span></a></li>
+                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>contactos/#section-formulario"><span>Enviarnos un mensaje</span></a></li>
+                </ul>
+            </li>
         </ul>
 
         <div class="search">

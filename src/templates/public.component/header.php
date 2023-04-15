@@ -51,7 +51,7 @@
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-redes-sociales"><span>Redes sociales</span></a></li>
                 </ul>
             </li>
-            <li class="option"><a href="<?= $DATA['http_domain'] ?>contactos"><span>Contatos</span></a></li>
+            <li class="option"><a href="<?= $DATA['http_domain'] ?>contactos"><span>Contactos</span></a></li>
         </ul>
 
         <div class="search">

@@ -48,7 +48,7 @@
                 <ul class="submenu">
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-team"><span>Equipo</span></a></li>
                     <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-conceptos"><span>Conceptos</span></a></li>
-                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-redes-sociales"><span>Curso 3</span></a></li>
+                    <li class="suboption"><a href="<?= $DATA['http_domain'] ?>nosotros/#section-redes-sociales"><span>Redes sociales</span></a></li>
                 </ul>
             </li>
             <li class="option"><a href="<?= $DATA['http_domain'] ?>contactos"><span>Contatos</span></a></li>

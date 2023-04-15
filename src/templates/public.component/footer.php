@@ -8,7 +8,7 @@
             <p>
                 Leanidea es una entidad educativa que busca brindar a sus estudiantes una educación de calidad, con profesores altamente capacitados y con una metodología de enseñanza innovadora. En leanidea puedes capacitarte hasta convertirte en un experto en cualquier área de tu interés y obtener un certificado avalado por instituciones públicas y privadas que afirmaran tu conocimiento para trabajar en cualquier empresa.
             </p>
-            <a href="<?= $DATA['http_domain'] ?>nosotros#section-conceptos" class="mas">Ver mas</a>
+            <a href="<?= $DATA['http_domain'] ?>nosotros/#section-conceptos" class="mas">Ver mas</a>
         </div>
 
         <div class="item">
@@ -16,7 +16,7 @@
             <p>
                 En Learnidea, nuestra misión es ofrecer una educación en línea de alta calidad y accesible en áreas de tendencia como tecnología, música, fibra óptica y educación de educadores. Nos esforzamos por brindar una experiencia educativa innovadora y efectiva, fomentando el aprendizaje continuo y el crecimiento profesional. En Learnidea, estamos comprometidos con el desarrollo de nuestra comunidad y trabajamos para democratizar el acceso al conocimiento y hacer que la educación sea más accesible y efectiva.
             </p>
-            <a href="<?= $DATA['http_domain'] ?>nosotros#section-conceptos" class="mas">Ver mas</a>
+            <a href="<?= $DATA['http_domain'] ?>nosotros/#section-conceptos" class="mas">Ver mas</a>
         </div>
 
         <div class="item">
@@ -24,7 +24,7 @@
             <p>
                 En Learnidea, buscamos ser líderes en capacitación de alta calidad en nuestra región, brindando una experiencia educativa innovadora y efectiva en áreas de tendencia como tecnología, música, fibra óptica y educación de educadores. Nos esforzamos por democratizar el acceso al conocimiento y ayudar a desarrollar el potencial de nuestra comunidad.
             </p>
-            <a href="<?= $DATA['http_domain'] ?>nosotros#section-conceptos" class="mas">Ver mas</a>
+            <a href="<?= $DATA['http_domain'] ?>nosotros/#section-conceptos" class="mas">Ver mas</a>
         </div>
 
         <div class="item">

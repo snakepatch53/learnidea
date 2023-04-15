@@ -5,6 +5,7 @@
     <?php include('./src/templates/public.component/head.php') ?>
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/library.general/splide/splide.min.css">
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/css.public/curso.css">
+    <title>Ideasoft - Fundamentos de programación</title>
     <style>
         :root {
             --bg-header-img: url('<?= $DATA['http_domain'] ?>public/img/frontpage-bg.png');

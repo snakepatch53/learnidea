@@ -1,0 +1,778 @@
+header .navbar {
+    /*    background: var(--color4);*/
+}
+
+main {
+    --color1: #121a21;
+    --color1-contrast: #ecf0f3;
+    --color1-contrast2: #62b7f4;
+    --color1-contrast3: #8e9ba4;
+    --color1-contrast4: #12a27c;
+    --color1-contrast5: #ae3126;
+
+    --color2: #1192ed;
+    --color2-contrast: #ffffff;
+
+    --color3: #192229;
+    --color3-contrast: #ffffff;
+    --color3-contrast2: #8e9ba4;
+
+    --color4: #212e36;
+    --color4-contrast: #ffffff;
+    --color4-contrast2: #8e9ba4;
+    --color4-contrast3: #2e97db;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--container-padding);
+    /*    padding: 50px var(--container-padding);*/
+}
+
+section .container {
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+
+/*SECTION FRONTPAGE*/
+.section-frontpage {
+    background: var(--color1);
+    padding-top: calc(var(--header-navbar-height) + 15px);
+}
+
+.section-frontpage .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-frontpage .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-frontpage .item .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color1-contrast2);
+    font-style: italic;
+}
+
+.section-frontpage .item .breadcrumb a {
+    text-decoration: none;
+    color: unset;
+    font-family: manrope;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.5px;
+    /*    white-space: nowrap;*/
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .item .breadcrumb a:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .item .breadcrumb i {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+
+.section-frontpage .item .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-frontpage .item .title h1 {
+    font-family: baloo;
+    color: var(--color1-contrast);
+    font-size: 1.7rem;
+    letter-spacing: 0.2px;
+    font-weight: normal;
+    line-height: 1.7rem;
+    user-select: text;
+}
+
+.section-frontpage .item .title p {
+    font-family: manrope;
+    color: var(--color1-contrast3);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    user-select: text;
+}
+
+.section-frontpage .item .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-frontpage .item .description h2 {
+    font-family: manrope;
+    font-size: 0.9rem;
+    color: var(--color1-contrast);
+    font-weight: normal;
+    letter-spacing: 0.4px;
+}
+
+.section-frontpage .item .description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+}
+
+.section-frontpage .item .description ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.section-frontpage .item .description ul li i {
+    color: var(--color1-contrast4);
+    font-size: 0.8rem;
+}
+
+.section-frontpage .item .description ul li span {
+    font-family: manrope;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: var(--color1-contrast3);
+    user-select: text;
+    white-space: normal;
+}
+
+.section-frontpage .item .basics {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color1-contrast3);
+}
+
+.section-frontpage .item .basics i {
+    font-size: 0.6rem;
+    color: var(--color1-contrast2);
+    margin-right: 3px;
+}
+
+.section-frontpage .item .basics span {
+    font-family: manrope;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.section-frontpage .item .basics .split {
+    display: block;
+    width: 1px;
+    background: var(--color1-contrast3);
+    height: 10px;
+    margin: 0 3px;
+}
+
+.section-frontpage .item .foot {
+    display: flex;
+    /*    flex-direction: column;*/
+    align-items: center;
+}
+
+.section-frontpage .item .foot button {
+    color: var(--color2-contrast);
+    padding: 10px 20px;
+    font-family: manrope;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 20px;
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .item .foot button:hover {
+    opacity: 0.85;
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .item .foot button.register {
+    background: var(--color2);
+}
+
+.section-frontpage .item .foot button.cancel {}
+
+.section-frontpage .item .foot label {
+    font-family: manrope;
+    color: var(--color1-contrast);
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.section-frontpage .item .foot .time {
+    display: flex;
+    gap: 3px;
+}
+
+.section-frontpage .item .foot .time-container {
+    display: flex;
+}
+
+.section-frontpage .item .foot .time span {
+    font-family: manrope;
+    font-size: .80rem;
+    color: var(--color1-contrast2);
+}
+
+.section-frontpage .item .foot .time span.letter {
+    margin-right: 10px;
+    color: var(--color1-contrast);
+}
+
+.section-frontpage .item .foot .time span.message {
+    font-family: manrope;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--color1-contrast5);
+    letter-spacing: 0.1px;
+    user-select: text;
+}
+
+.section-frontpage .item .foot .time.time-out span.message {
+    display: block;
+}
+
+.section-frontpage .item .foot .time.time-out span {
+    display: none;
+}
+
+.section-frontpage .item .portada {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/3;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section-frontpage .item .portada:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.section-frontpage .item .portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+
+@media (max-width: 1000px) {
+    .section-frontpage .container {
+        flex-direction: column-reverse;
+    }
+
+    .section-frontpage .item h1 {
+        margin: 15px 0;
+    }
+
+    .section-frontpage .item .basics {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-frontpage .item .foot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .section-frontpage .item .breadcrumb {
+        gap: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: calc(100vw - 40px);
+    }
+
+    .section-frontpage .item .breadcrumb a {
+        letter-spacing: 0px;
+    }
+}
+
+
+
+
+
+
+/*SECTION DESCRIPCION*/
+
+.section-descripcion {
+    background: var(--color3);
+}
+
+.section-descripcion .container {
+    display: flex;
+    gap: 30px;
+}
+
+.section-descripcion .container .item {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-descripcion h3 {
+    font-size: 1.2rem;
+    font-family: manrope;
+    letter-spacing: 0.2px;
+    color: var(--color3-contrast);
+}
+
+.section-descripcion .lists {
+    display: flex;
+    flex-direction: column;
+    background: var(--color4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section-descripcion .lists .list {
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px var(--color3);
+    opacity: 0.7;
+    border-left: solid 1px transparent;
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list.open,
+.section-descripcion .lists .list:hover {
+    opacity: 1;
+    border-left: solid 1px var(--color2);
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.section-descripcion .lists .list button label {
+    color: var(--color4-contrast);
+    font-family: manrope;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.section-descripcion .lists .list button p {
+    color: var(--color4-contrast2);
+    font-size: 0.8rem;
+    letter-spacing: 0.4px;
+}
+
+.section-descripcion .lists .list button span {
+    color: var(--color4-contrast2);
+    font-family: manrope;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.section-descripcion .lists .list button i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    font-size: 1rem;
+    color: var(--color4-contrast2);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list.open button i {
+    transform: rotate(180deg);
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list button i:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list.open ul {
+    max-height: 100vh;
+    opacity: 1;
+    padding: 0 25px;
+    padding-bottom: 20px;
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .lists .list ul li {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.section-descripcion .lists .list ul li b {
+    font-family: manrope;
+    color: var(--color4-contrast);
+    font-weight: normal;
+    font-size: 0.8rem;
+    user-select: text;
+    letter-spacing: 0.5px;
+}
+
+.section-descripcion .lists .list ul li p {
+    font-family: manrope;
+    color: var(--color4-contrast2);
+    font-size: 0.8rem;
+    user-select: text;
+    letter-spacing: 0.5px;
+}
+
+.section-descripcion .container .item.additional {
+    flex: 1;
+    position: sticky;
+    top: calc(var(--header-navbar-height) + var(--container-padding));
+    display: block;
+    background: #ccc;
+    height: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+
+/*subsection - about curso*/
+.section-descripcion .container .item.information {}
+
+.section-descripcion .container .item.information .about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--color4);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.section-descripcion .container .item.information .about h3 {
+    color: var(--color4-contrast);
+    font-family: manrope;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.section-descripcion .container .item.information .about p {
+    color: var(--color4-contrast2);
+    font-size: 0.8rem;
+    font-family: manrope;
+    letter-spacing: 0.5px;
+    user-select: text;
+}
+
+.section-descripcion .container .item.information .more {
+    display: flex;
+    gap: 25px;
+}
+
+.section-descripcion .container .item.information .more .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-descripcion .container .item.information .more .item h4 {
+    display: flex;
+    gap: 5px;
+}
+
+.section-descripcion .container .item.information .more .item h4 i {
+    color: var(--color4-contrast);
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+}
+
+.section-descripcion .container .item.information .more .item h4 span {
+    color: var(--color4-contrast);
+    font-family: manrope;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.section-descripcion .container .item.information .more .item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.section-descripcion .container .item.information .more .item ul li {
+    display: flex;
+    gap: 5px;
+}
+
+.section-descripcion .container .item.information .more .item ul li i {
+    color: var(--color4-contrast3);
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+}
+
+.section-descripcion .container .item.information .more .item ul li p {}
+
+
+
+
+
+/*subsection teachers*/
+
+.section-descripcion .item.additional {
+    padding: 10px;
+    background: transparent !important;
+}
+
+.section-descripcion .item.additional .teachers {
+    background: var(--color4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    /*        overflow: hidden;*/
+    border-left: solid 2px var(--color2);
+}
+
+.section-descripcion .item.additional .teachers ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-descripcion .item.additional .teachers ul a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    ;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.section-descripcion .item.additional .teachers ul a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.section-descripcion .item.additional .teachers h2 {
+    font-family: manrope;
+    font-size: 1.1rem;
+    color: var(--color4-contrast);
+}
+
+.section-descripcion .item.additional .teachers .image {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.section-descripcion .item.additional .teachers .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-descripcion .item.additional .teachers .info {}
+
+.section-descripcion .item.additional .teachers .info h3 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-family: manrope;
+}
+
+.section-descripcion .item.additional .teachers .info p {
+    font-family: manrope;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: var(--color4-contrast2);
+}
+
+
+/*subseccion - cursos*/
+
+.section-descripcion .item.additional .cursos {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-descripcion .item.additional .cursos h2 {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: var(--color3-contrast);
+    font-family: manrope;
+    letter-spacing: 1px;
+}
+
+.section-descripcion .item.additional .cursos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.section-descripcion .item.additional .cursos ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    aspect-ratio: 4/1;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .item.additional .cursos ul li:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.section-descripcion .item.additional .cursos ul li .image {
+    aspect-ratio: 5/3;
+    /*    height: 100%;*/
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    flex: 1;
+}
+
+.section-descripcion .item.additional .cursos ul li .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-descripcion .item.additional .cursos ul li .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-descripcion .item.additional .cursos ul li .info h3 {
+    font-family: manrope;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.section-descripcion .item.additional .cursos ul li .info .teacher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.section-descripcion .item.additional .cursos ul li .info .teacher img {
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #ffffff;
+    object-fit: contain;
+}
+
+.section-descripcion .item.additional .cursos ul li .info .teacher p {
+    color: var(--color3-contrast2);
+    font-family: manrope;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    line-height: 0.9rem;
+}
+
+
+
+@media (max-width: 1300px) {
+    .section-descripcion {
+        padding: 10px;
+    }
+
+    .section-descripcion .container {
+        gap: 10px;
+    }
+
+    .section-descripcion .container .item {
+        flex: 2;
+    }
+
+    .section-descripcion .item.additional .cursos ul li .info h3 {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-descripcion .container {
+        gap: 20px;
+    }
+
+    .section-descripcion .container .item {
+        flex: 1;
+    }
+
+    .section-descripcion .container {
+        flex-direction: column;
+    }
+
+    .section-descripcion .item.additional .cursos ul li .info h3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .section-descripcion .item.additional {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-descripcion .container .item.information .more {
+        flex-direction: column;
+    }
+}

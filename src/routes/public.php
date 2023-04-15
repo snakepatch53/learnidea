@@ -2,10 +2,6 @@
 $_TEMPLATE_PUBLIC_PATH = './src/templates/public.pages/';
 $radapter = new RAdapter($router, $_TEMPLATE_PUBLIC_PATH, $_ENV['HTTP_DOMAIN']);
 
-
-/**
- * ? El error a quedado solucionado
- */
 // HOME
 $radapter->getHTML('/index.php', 'home', function ($DATA) {
     // $info = (new InfoDao($DATA['mysqlAdapter']))->select();
@@ -43,5 +39,12 @@ $radapter->getHTML('/', 'home', function ($DATA) {
 
 
 $radapter->getHTML('/cursos', 'cursos');
+
+$radapter->getHTML('/cursos/{curso_id}', 'curso', function ($DATA, $curso_id) {
+    // search curso by ID or NAME
+    return ['curso_id' => $curso_id];
+});
+
 $radapter->getHTML('/nosotros', 'nosotros');
+
 $radapter->getHTML('/contactos', 'contactos');

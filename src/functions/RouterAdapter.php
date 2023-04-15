@@ -62,6 +62,7 @@ class RAdapter
                 // Comprobar si el middleware devuelve un array para unirlo al array DATA
                 if (is_array($middleware_respponse)) $DATA = array_merge($DATA, $middleware_respponse);
             }
+
             // Comprobar si se envio quiere que se incluya un archivo con el mismo nombre que el nombre de la vista
             if ($auto_include == true) {
                 // Comprobar si existe el archivo

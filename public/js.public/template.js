@@ -10,7 +10,7 @@ window.onscroll = function (evt) {
     $navbarTop.classList.remove("float");
 };
 
-btn_toggle_navbar.onclick = () => $navbarTop.classList.toggle("open-menu");
+if (btn_toggle_navbar) btn_toggle_navbar.onclick = () => $navbarTop.classList.toggle("open-menu");
 
 function newReloj(selector) {
     // FUNCION DE HORA DEL ANUNCIO

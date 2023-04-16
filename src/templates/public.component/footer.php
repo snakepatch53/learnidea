@@ -31,11 +31,11 @@
             <h5>Enlaces</h5>
             <ul>
                 <li><a href="<?= $DATA['http_domain'] ?>">Inicio</a></li>
-                <li><a href="<?= $DATA['http_domain'] ?>cursos">Cursos</a></li>
-                <li><a href="<?= $DATA['http_domain'] ?>nosotros">Nosotros/</a></li>
-                <li><a href="<?= $DATA['http_domain'] ?>contactos">Contacto</a></li>
-                <li><a href="<?= $DATA['http_domain'] ?>register">Registrarse</a></li>
-                <li><a href="<?= $DATA['http_domain'] ?>login">Iniciar sesion</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>cursos/">Cursos</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>nosotros/">Nosotros</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>contactos/">Contacto</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>register/">Registrarse</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>login/">Iniciar sesion</a></li>
             </ul>
         </div>
 
@@ -45,8 +45,8 @@
                 <li><a href="https://istsucua.edu.ec/" target="_blank">Instituto Tecnologico Superior Sucua</a></li>
                 <li><a href="https://www.senescyt.gob.ec/" target="_blank">Secretaria de Educacion Superior, Ciencia, Tenologia e Innovacion</a></li>
                 <li><a href="https://www.cetececuador.com/" target="_blank">Centro de Tecnologia de Entretenimiento y Capacitacion</a></li>
-                <li><a href="https://learnidea.ideasoft.com" target="_blank">Learnidea</a></li>
-                <li><a href="https://ideasoft.com" target="_blank">Ideasoft</a></li>
+                <li><a href="https://learnidea.ideasoft.com/" target="_blank">Learnidea</a></li>
+                <li><a href="https://ideasoft.com/" target="_blank">Ideasoft</a></li>
             </ul>
         </div>
     </div>

@@ -38,6 +38,8 @@ $radapter->getHTML('/', 'home', function ($DATA) {
 });
 
 
+$radapter->getHTML('/login', 'login');
+$radapter->getHTML('/register', 'register');
 $radapter->getHTML('/cursos', 'cursos');
 
 $radapter->getHTML('/cursos/{curso_id}', 'curso', function ($DATA, $curso_id) {

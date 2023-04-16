@@ -1,0 +1,297 @@
+body {
+    --color1: #192229;
+    --color1-contrast1: #ffffff;
+    --color2: #212e36;
+    --color2-contrast1: #ffffff;
+    --color2-contrast2: #b7c1c8;
+    --color2-contrast3: #62b7f4;
+    --color3: #273b49;
+    --color3-contrast1: #ffffff;
+    --color3-contrast2: #687782;
+    --color4: #1292ee;
+    --color4-contrast1: #ffffff;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--color1);
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: var(--container-padding);
+    /*    padding: 50px var(--container-padding);*/
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    background: var(--color2);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+form .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+form .logo img {
+    aspect-ratio: 1/1;
+    height: 100%;
+    object-fit: contain;
+}
+
+form .logo span {
+    font-family: baloo;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--color2-contrast1);
+}
+
+form h1 {
+    font-size: 1.8rem;
+    font-family: manrope;
+    text-align: center;
+    color: var(--color1-contrast1);
+    margin: 20px 0;
+}
+
+form .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+form .inputs .item.col-2 {
+    grid-column: 1/3;
+}
+
+form .inputs .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .inputs .item label {
+    font-family: manrope;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: var(--color2-contrast2);
+}
+
+form .inputs .item .input {
+    display: flex;
+    background: var(--color3);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+form .inputs .item .input input {
+    flex: 1;
+    background: transparent;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    font-family: manrope;
+    color: var(--color3-contrast1);
+}
+
+form .inputs .item .input input::placeholder {
+    color: var(--color3-contrast2);
+    padding: 0 10px;
+}
+
+form .inputs .item .input button {
+    background: transparent;
+    cursor: pointer;
+}
+
+form .inputs .item .input button i {
+    color: var(--color3-contrast2);
+    font-size: 1rem;
+}
+
+form .inputs .item .input button i.show {}
+
+form .inputs .item .input button i.hide {}
+
+form .inputs .item .input button i.hide,
+form .inputs .item .input.show button i.show {
+    display: none;
+}
+
+form .inputs .item .input button i.show,
+form .inputs .item .input.show button i.hide {
+    display: block;
+}
+
+form .inputs .item.radio .input {
+    padding: 0;
+}
+
+form .inputs .item.radio .input input {
+    display: none;
+}
+
+form .inputs .item.radio .input label {
+    flex:1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-bottom: solid 1px transparent;
+    color: var(--color3-contrast2);
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.radio .input input:checked + label {
+    border-bottom: solid 1px var(--color4);
+    color: var(--color3-contrast1);
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.submit .input {
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 0;
+}
+
+form .inputs .item.submit .input input {
+    background: var(--color4);
+    color: var(--color4-contrast1);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.submit .input input:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.terminos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+form .inputs .item.terminos input {
+    cursor: pointer;
+}
+
+form .inputs .item.terminos label {
+    font-family: manrope;
+    color: var(--color2-contrast2);
+    cursor: pointer;
+}
+
+form .inputs .item.terminos a {
+    text-decoration: none;
+    color: var(--color2-contrast3);
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    margin-left: 1px;
+}
+
+form .inputs .item.terminos a:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+form .more {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+form .more .link {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+form .more .link span {
+    font-family: manrope;
+    font-size: 0.85rem;
+    color: var(--color2-contrast2);
+    letter-spacing: 0.5px;
+}
+
+form .more .link a {
+    text-decoration: none;
+    color: var(--color2-contrast3);
+    font-family: manrope;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+form .more .link a:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        background: transparent;
+        padding: 0;
+    }
+
+    body {
+        background: var(--color2);
+    }
+}
+
+
+@media (max-width: 450px) {
+    
+    main {
+        padding: 20px;
+    }
+
+    form .inputs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    form .inputs .item.col-2 {
+        grid-column: unset;
+    }
+}
+
+
+@media (max-width: 300px) {
+    
+    main {
+        padding: 10px;
+    }
+}

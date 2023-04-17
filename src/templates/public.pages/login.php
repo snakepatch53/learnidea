@@ -12,10 +12,10 @@
 
         <div class="container">
             <form onsubmit="return false" id="form-login">
-                <div class="logo">
+                <a class="logo" href="<?= $DATA['http_domain'] ?>">
                     <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea">
                     <span>Learnidea</span>
-                </div>
+                </a>
 
                 <h1>Iniciar sesión</h1>
 

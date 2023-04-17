@@ -11,6 +11,7 @@ $radapter->post('/services/slider_imgs/select', fn (...$args) => SliderImgServic
 $radapter->post('/services/slider_imgs/insert', fn (...$args) => SliderImgService::insert(...$args));
 $radapter->post('/services/slider_imgs/update', fn (...$args) => SliderImgService::update(...$args));
 $radapter->post('/services/slider_imgs/delete', fn (...$args) => SliderImgService::delete(...$args));
+$radapter->post('/services/email/sendConfirmEmailByCode', fn (...$args) => EmailService::sendCode(...$args));
 
 
 // // INFO

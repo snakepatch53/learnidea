@@ -12,14 +12,22 @@
 
         <div class="container">
             <form onsubmit="return false" id="form-login">
-                <div class="logo">
+                <a class="logo" href="<?= $DATA['http_domain'] ?>">
                     <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea">
                     <span>Learnidea</span>
-                </div>
+                </a>
 
                 <h1>Crea tu cuenta</h1>
 
                 <div class="inputs">
+
+                    <div class="item col-2">
+                        <label for="email">Cédula</label>
+                        <div class="input">
+                            <input type="text" name="cedula" placeholder="Número de cédula">
+                        </div>
+                    </div>
+
                     <div class="item">
                         <label for="email">Nombres</label>
                         <div class="input">
@@ -47,16 +55,16 @@
                     </div>
 
                     <div class="item">
-                        <label for="email">Cédula</label>
+                        <label for="email">Correo electrónico</label>
                         <div class="input">
-                            <input type="text" name="cedula" placeholder="Número de cédula">
+                            <input type="email" name="email" placeholder="Correo electrónico">
                         </div>
                     </div>
 
                     <div class="item">
-                        <label for="email">Correo electrónico</label>
+                        <label for="email">Celular</label>
                         <div class="input">
-                            <input type="email" name="email" placeholder="Correo electrónico">
+                            <input type="text" name="celular" placeholder="Número de celular">
                         </div>
                     </div>
 

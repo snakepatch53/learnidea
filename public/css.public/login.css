@@ -54,6 +54,7 @@ form .logo {
     justify-content: center;
     align-items: center;
     height: 50px;
+    text-decoration: none;
 }
 
 form .logo img {

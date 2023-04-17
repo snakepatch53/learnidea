@@ -66,6 +66,7 @@
         }
 
         .imagen {
+
             text-align: center;
         }
     </style>

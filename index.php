@@ -25,6 +25,9 @@ require_once('./src/dao/SliderImgDao.php');
 require_once('./src/services/slider_img.service.php');
 require_once('./src/services/email.service.php');
 
+// cargamos las plantillas para emails y pdfs
+include('./src/templates/general.pages/emailConfirmCode.php');
+
 
 // cargamos las variables de entorno
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

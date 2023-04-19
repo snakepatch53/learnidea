@@ -11,18 +11,26 @@ class EmailService
             'response' => false,
             'data' => null
         ];
-        if (true) {
-            include('./src/templates/general.pages/emailConfirmCode.php');
+        if (isset(
+            $_POST['user_name'],
+            $_POST['user_email'],
+        )) {
+            $user_name = $_POST['user_name'];
+            $user_email = $_POST['user_email'];
             $rs = EmailService::sendEmail(
-                "snakepatch53@gmail.com",
-                "Learnidea",
-                "snakepatch53@gmail.com",
-                "Harold Hernandez",
-                "test",
-                $html_content, //   $html_content es una variable que viene del template emailConfirmCode.php
+                "snakepatch53@gmail.com", // estos datos hay que traerlos de la base de datos
+                "Learnidea", // estos datos hay que traerlos de la base de datos
+                $user_email,
+                $user_name,
+                "Confirmacion de correo electronico",
+                getEmailConfirmCode($DATA, $user_name), //   $html_content es una variable que viene del template emailConfirmCode.php
             );
-            echo json_encode($rs);
-            return;
+            $result = [
+                'status' => 'success',
+                'message' => 'Se ha enviado el correo de confirmación',
+                'response' => $rs,
+                'data' => null
+            ];
         }
         echo json_encode($result);
     }
@@ -44,15 +52,6 @@ class EmailService
         if ($attachment) {
             $email->addAttachment($attachment);
         }
-
-        // $imageContent = file_get_contents('https://learnidea.ideasoft.site/public/img/icon.png');
-        // $imageAttachment = new \SendGrid\Mail\Attachment();
-        // $imageAttachment->setContent(base64_encode($imageContent));
-        // $imageAttachment->setType('image/png');
-        // $imageAttachment->setFilename('icon.png');
-        // $imageAttachment->setDisposition('inline');
-        // $email->addContent("text/html", "This is an image");
-        // $email->addAttachment($imageAttachment);
 
         $sendgrid = new \SendGrid($_ENV['SENDGRID_API_KEY']);
         try {

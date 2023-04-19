@@ -18,11 +18,13 @@ $radapter->post('/services/email/sendConfirmEmailByCode', fn (...$args) => Email
 // $radapter->post('/services/info/select', fn (...$args) => InfoService::select(...$args));
 // $radapter->post('/services/info/update', fn () => middlewareSessionServicesLogin(), fn (...$args) => InfoService::update(...$args));
 
-// // USER
-// $radapter->post('/services/user/login', fn (...$args) => UserService::login(...$args));
-// $radapter->post('/services/user/logout', fn () => UserService::logout());
-// // need to be logged
-// $radapter->post('/services/user/select', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::select(...$args));
-// $radapter->post('/services/user/insert', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::insert(...$args));
-// $radapter->post('/services/user/update', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::update(...$args));
-// $radapter->post('/services/user/delete', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::delete(...$args));
+// USER
+$radapter->post('/services/users/login', fn (...$args) => UserService::login(...$args));
+$radapter->post('/services/users/logout', fn () => UserService::logout());
+// need to be logged
+$radapter->post('/services/users/select', fn (...$args) => UserService::select(...$args));
+$radapter->post('/services/users/register', fn (...$args) => UserService::register(...$args));
+// $radapter->post('/services/users/select', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::select(...$args));
+// $radapter->post('/services/users/insert', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::insert(...$args));
+// $radapter->post('/services/users/update', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::update(...$args));
+// $radapter->post('/services/users/delete', fn () => middlewareSessionServicesLogin(), fn (...$args) => UserService::delete(...$args));

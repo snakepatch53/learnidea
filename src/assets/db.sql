@@ -81,34 +81,64 @@
 --         '2023-01-01 00:00:00',
 --         '2023-01-01 00:00:00'
 --     );
--- DROP TABLE IF EXISTS user;
--- CREATE TABLE user (
---     user_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
---     user_name VARCHAR(50),
---     user_user VARCHAR(50),
---     user_pass TEXT,
---     user_last VARCHAR(50),
---     user_created VARCHAR(50)
--- ) ENGINE INNODB;
--- INSERT INTO
---     user
--- VALUES
---     (
---         1,
---         'Administrador',
---         'admin',
---         'admin',
---         '2023-01-01 00:00:00',
---         '2023-01-01 00:00:00'
---     ),
---     (
---         2,
---         'Root',
---         'moronanet',
---         'lzTCs\\0Qj=%J',
---         '2023-01-01 00:00:00',
---         '2023-01-01 00:00:00'
---     );
+DROP TABLE IF EXISTS user;
+
+/* 
+ user_level = Nivel academico => [1:Basico|2:Secudario|3:superior] 
+ user_sex = Sexo => [M:Masculino|F:Femenino]
+ user_type = Tipo de usuario => [1:Estudiante|2:Profesor|3:Administrador]
+ */
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    user_names VARCHAR(50),
+    user_surnames VARCHAR(50),
+    user_user VARCHAR(50),
+    user_cedula VARCHAR(10),
+    user_email VARCHAR(50),
+    user_pass TEXT,
+    user_level INT,
+    user_sex VARCHAR(1),
+    user_phone VARCHAR(10),
+    user_type INT DEFAULT 1,
+    user_address TEXT,
+    user_photo VARCHAR(50) DEFAULT 'default.png',
+    user_last VARCHAR(50),
+    user_created VARCHAR(50)
+) ENGINE INNODB;
+
+INSERT INTO
+    users (
+        user_names,
+        user_surnames,
+        user_user,
+        user_email,
+        user_pass,
+        user_type,
+        user_last,
+        user_created
+    )
+VALUES
+    (
+        'Administrador',
+        'Learnidea',
+        'admin',
+        'learnidea@email.com',
+        '21232f297a57a5a743894a0e4a801fc3',
+        3,
+        '2023-01-01 00:00:00',
+        '2023-01-01 00:00:00'
+    ),
+    (
+        'Administrador',
+        'Ideasoft',
+        'ideasoft',
+        'ideasoft@email.com',
+        '27c355de4d2f5202868fc6c72991a3f2',
+        3,
+        '2023-01-01 00:00:00',
+        '2023-01-01 00:00:00'
+    );
+
 DROP TABLE IF EXISTS slider_imgs;
 
 CREATE TABLE slider_imgs (

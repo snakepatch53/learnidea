@@ -152,7 +152,7 @@
                     </div>
                     <div class="text">
                         <h2>¡Registro exitoso!</h2>
-                        <p>Gracias <span class="user_name"></span> por registrarte en Learnidea.</p>
+                        <p><span class="user_name"></span> has dado el primer paso para ser un profesional en el area que mas te gusta.</p>
                         <p>Revise su correo electrónico para activar tu cuenta.</p>
                     </div>
                 </div>

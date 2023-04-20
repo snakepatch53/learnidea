@@ -1,5 +1,5 @@
 <?php
-function getEmailConfirmCode(array $DATA, string $user_name)
+function getEmailConfirmCode(string $webpage_name, string $http_domain, string $user_code, string $user_name)
 {
     ob_start();
 ?>
@@ -7,7 +7,7 @@ function getEmailConfirmCode(array $DATA, string $user_name)
     <html>
 
     <head>
-        <title>Confirmación de correo electrónico - Learnidea</title>
+        <title>Confirmación de correo electrónico - <?= $webpage_name ?></title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">
@@ -83,7 +83,7 @@ function getEmailConfirmCode(array $DATA, string $user_name)
             </div>
             <h1>Bienvenido a Learnidea</h1>
             <p>Hola <b><?= $user_name ?></b>, gracias por registrarse en Learnidea, una institución de educación mediante cursos presenciales y virtuales. Para continuar con su registro, por favor confirme su dirección de correo electrónico haciendo clic en el siguiente enlace:</p>
-            <p><a href="<?= $DATA['http_domain'] ?>confirmacion/codigo1231231" class="btn">Confirmar correo electrónico</a></p>
+            <p><a href="<?= $http_domain ?>confirmacion/<?= $user_code ?>" class="btn">Confirmar correo electrónico</a></p>
             <p>Si no ha solicitado este registro, puede ignorar este correo electrónico.</p>
         </div>
         <div class="footer">

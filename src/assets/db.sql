@@ -95,6 +95,7 @@ CREATE TABLE users (
     user_user VARCHAR(50),
     user_cedula VARCHAR(10),
     user_email VARCHAR(50),
+    user_email_verified BOOLEAN DEFAULT FALSE,
     user_pass TEXT,
     user_level INT,
     user_sex VARCHAR(1),
@@ -102,8 +103,13 @@ CREATE TABLE users (
     user_type INT DEFAULT 1,
     user_address TEXT,
     user_photo VARCHAR(50) DEFAULT 'default.png',
+    user_status BOOLEAN DEFAULT TRUE,
+    user_code VARCHAR(50),
     user_last VARCHAR(50),
-    user_created VARCHAR(50)
+    user_created VARCHAR(50),
+    UNIQUE (user_user),
+    UNIQUE (user_email),
+    UNIQUE (user_cedula)
 ) ENGINE INNODB;
 
 INSERT INTO

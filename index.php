@@ -27,8 +27,9 @@ require_once('./src/services/user.service.php');
 require_once('./src/services/slider_img.service.php');
 require_once('./src/services/email.service.php');
 
-// cargamos las plantillas para emails y pdfs
-include('./src/templates/general.pages/emailConfirmCode.php');
+// cargamos las apis externas (API)
+require_once('./src/apis/SenderEmailAdapter.php');
+require_once('./src/apis/EmailApi.php');
 
 
 // cargamos las variables de entorno

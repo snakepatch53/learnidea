@@ -58,6 +58,7 @@ class UserService
         ]);
         exit();
     }
+
     public static function select($DATA)
     {
         header('Content-Type: application/json');
@@ -72,6 +73,7 @@ class UserService
             'data' => $users
         ]);
     }
+
     public static function register($DATA)
     {
         header('Content-Type: application/json');
@@ -102,6 +104,16 @@ class UserService
             $user_level = $_POST['user_level'];
             $user_sex = $_POST['user_sex'];
             $user_phone = $_POST['user_phone'];
+
+            $user = $userDao->isRegistered($user_email, $user_cedula);
+            if ($user != false) {
+                // ! El usuario ya se encuentra registrado
+                $result['message'] = 'El usuario ya se encuentra registrado';
+                $result['data'] = null;
+                echo json_encode($result);
+                return;
+            }
+
             $user = $userDao->register(
                 $user_names,
                 $user_surnames,
@@ -112,13 +124,41 @@ class UserService
                 $user_sex,
                 $user_phone
             );
+
+            if ($user == false) {
+                // ! No se pudo registrar el usuario
+                $result['message'] = 'No se pudo registrar el usuario, intente nuevamente';
+                $result['data'] = $user;
+                echo json_encode($result);
+                return;
+            }
+
+            // ? Enviar correo de verificación
+            $emailApi = new EmailApi();
+            $isSent = $emailApi->sendConfirmationEmail(
+                $user['user_email'],
+                $user['user_code'],
+                $user['user_shortname']
+            );
+
+            if ($isSent == false) {
+                // ! No se pudo enviar el correo de verificación
+                $userDao->deleteById($user['user_id']);
+                $result['message'] = 'No se pudo enviar el correo de verificación, intente nuevamente';
+                $result['data'] = $user;
+                echo json_encode($result);
+                return;
+            }
+
+            // * Usuario registrado correctamente, se envió el correo de verificación
             $result['status'] = 'success';
-            $result['message'] = 'Usuario registrado correctamente';
+            $result['message'] = 'Usuario registrado, verifique su correo';
             $result['response'] = true;
             $result['data'] = $user;
         }
         echo json_encode($result);
     }
+
     // public static function insert($DATA)
     // {
     //     header('Content-Type: application/json');

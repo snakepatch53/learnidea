@@ -8,6 +8,8 @@ body {
     --color3: #273b49;
     --color3-contrast1: #ffffff;
     --color3-contrast2: #687782;
+    --color3-contrast3: #279345;
+    --color3-contrast4: #5da1d3;
     --color4: #1292ee;
     --color4-contrast1: #ffffff;
 
@@ -106,6 +108,7 @@ form .inputs .item .input {
     background: var(--color3);
     padding: 10px;
     border-radius: 4px;
+    border: solid 1px transparent;
 }
 
 
@@ -117,6 +120,17 @@ form .inputs .item .input input {
     font-family: manrope;
     color: var(--color3-contrast1);
 }
+
+/*
+
+form .inputs .item .input input:autofill {
+    background-color: red !important;
+    color: blue !important;
+    appearance: none !important;
+    border: 1px solid red;
+    padding: 10px;
+}
+*/
 
 form .inputs .item .input input::placeholder {
     color: var(--color3-contrast2);
@@ -147,6 +161,51 @@ form .inputs .item .input.show button i.hide {
     display: block;
 }
 
+form .inputs .item .message {
+    font-family: manrope;
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+    user-select: text;
+    color: #62b7f4;
+    margin-top: -8px;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.info .message {
+    color: #62b7f4;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.error .message {
+    color: #d03a2d;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.success .message {
+    color: #32cc5d;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.info .input {
+    border-color: #62b7f4;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.error .input {
+    border-color: #d03a2d;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.success .input {
+    border-color: #32cc5d;
+    transition: all 0.2s ease;
+}
+
+
+
+
+
 form .inputs .item.radio .input {
     padding: 0;
 }
@@ -156,7 +215,7 @@ form .inputs .item.radio .input input {
 }
 
 form .inputs .item.radio .input label {
-    flex:1;
+    flex: 1;
     padding: 10px;
     text-align: center;
     cursor: pointer;
@@ -194,21 +253,59 @@ form .inputs .item.submit .input input:hover {
     transition: all 0.2s ease;
 }
 
+form .inputs .item.message {
+    font-family: manrope;
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 1px;
+    user-select: text;
+    color: #62b7f4;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.message.info {
+    color: #62b7f4;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.message.error {
+    color: #d03a2d;
+    transition: all 0.2s ease;
+}
+
+form .inputs .item.message.success {
+    color: #32cc5d;
+    transition: all 0.2s ease;
+}
+
 form .inputs .item.terminos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .inputs .item.terminos .input {
+    display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 0;
     gap: 5px;
     cursor: pointer;
+    background: transparent;
+}
+
+form .inputs .item.terminos .input {
+    border-color: transparent !important;
 }
 
 form .inputs .item.terminos input {
+    flex: unset;
     cursor: pointer;
 }
 
 form .inputs .item.terminos label {
     font-family: manrope;
+    font-size: 0.85rem;
     color: var(--color2-contrast2);
     cursor: pointer;
 }
@@ -230,7 +327,7 @@ form .more {
     display: flex;
     flex-flow: column;
     gap: 10px;
-    margin-top: 10px;
+    /*    margin-top: 10px;*/
 }
 
 form .more .link {
@@ -275,7 +372,7 @@ form .more .link a:hover {
 
 
 @media (max-width: 450px) {
-    
+
     main {
         padding: 20px;
     }
@@ -291,8 +388,176 @@ form .more .link a:hover {
 
 
 @media (max-width: 300px) {
-    
+
     main {
         padding: 10px;
     }
+}
+
+
+
+/*modal confirm register*/
+
+.modal_success {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 0;
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    transition: all 0.2s ease;
+    padding: var(--container-padding);
+}
+
+.modal_success canvas {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    margin: auto;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.modal_success.open {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.modal_success.load canvas {
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.modal_success.load .container .content {
+    max-width: 0;
+    max-height: 0;
+    opacity: 0;
+}
+
+.modal_success.load .container .load {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+}
+
+.modal_success .container .load {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    max-height: 0;
+    min-width: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.modal_success .container .load i {
+    color: var(--color3-contrast4);
+    font-size: 2rem;
+}
+
+.modal_success .container .load p {
+    text-align: center;
+    font-family: manrope;
+    font-size: 1.5rem;
+    color: var(--color3-contrast4);
+}
+
+.modal_success .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: 100%;
+    max-height: 350px;
+    background: var(--color3);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+    padding: 60px 30px;
+}
+
+.modal_success .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+}
+
+.modal_success .container .content .icon {
+    text-align: center;
+}
+
+.modal_success .container .content .icon i {
+    color: var(--color3-contrast3);
+    font-size: 3rem;
+}
+
+.modal_success .container .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal_success .container .content .text h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: baloo;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--color3-contrast1);
+    letter-spacing: 1px;
+}
+
+.modal_success .container .content .text p {
+    font-family: manrope;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+    color: var(--color3-contrast4);
+    text-align: center;
+    user-select: text;
+    text-shadow:
+        1px 0 1px rgba(0, 0, 0, 0.3),
+        -1px 0 1px rgba(0, 0, 0, 0.3),
+        0 1px 1px rgba(0, 0, 0, 0.3),
+        0 -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.modal_success .container .content .text p span {
+    font-weight: bold;
 }

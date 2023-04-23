@@ -15,7 +15,10 @@
 
             <div class="content">
                 <a class="title" href="<?= $DATA['http_domain'] ?>">
-                    <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea">
+                    <!-- <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea"> -->
+                    <div class="svg">
+                        <?php include('./public/img/logo.svg') ?>
+                    </div>
                     <span><?= $_ENV['APP_NAME'] ?></span>
                 </a>
                 <h1>¡Confirmación exitosa!</h1>

@@ -27,8 +27,11 @@
 <nav class="navbar" id="topnavbar"><!-- class = float && open-menu  -->
     <div class="container">
         <a href="<?= $DATA['http_domain'] ?>" class="logo">
-            <img class="logo_light" src="<?= $DATA['http_domain'] ?>public/img/logo_light.svg" alt="Logo">
-            <img class="logo_dark" src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Logo">
+            <!-- <img class="logo_light" src="<?= $DATA['http_domain'] ?>public/img/logo_light.svg" alt="Logo">
+            <img class="logo_dark" src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Logo"> -->
+            <div class="svg">
+                <?php include('./public/img/logo.svg') ?>
+            </div>
             <span>Learnidea</span>
         </a>
         <ul class="menu">

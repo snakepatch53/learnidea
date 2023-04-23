@@ -14,7 +14,10 @@
         <div class="container">
             <form onsubmit="return false" id="form-login">
                 <a class="logo" href="<?= $DATA['http_domain'] ?>">
-                    <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea">
+                    <!-- <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea"> -->
+                    <div class="svg">
+                        <?php include('./public/img/logo.svg') ?>
+                    </div>
                     <span>Learnidea</span>
                 </a>
 
@@ -114,7 +117,7 @@
                     <div class="item col-2 terminos">
                         <label class="input">
                             <input type="checkbox" name="user_terminos" id="terminos">
-                            <label for="terminos">Acepto los <a href="<?= $DATA['http_domain'] ?>terminos-y-condiciones-de-uso/">términos y condiciones</a></label>
+                            <label for="terminos">Acepto los <a href="<?= $DATA['http_domain'] ?>terminos-condiciones-uso/">términos y condiciones</a></label>
                         </label>
                         <p class="message"></p>
                     </div>

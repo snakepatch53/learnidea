@@ -37,8 +37,15 @@ footer .cards .item .logo {
     text-decoration: none;
 }
 
+footer .cards .item .logo .svg,
 footer .cards .item .logo img {
     aspect-ratio: 1/1;
+    height: 100%;
+}
+
+footer .cards .item .logo svg {
+    width: 100%;
+    fill: var(--color1-contrast);
     height: 100%;
 }
 

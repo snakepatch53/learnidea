@@ -57,10 +57,16 @@ form .logo {
     text-decoration: none;
 }
 
+form .logo .svg,
 form .logo img {
     aspect-ratio: 1/1;
     height: 100%;
     object-fit: contain;
+}
+
+form .logo svg {
+    width: 100%;
+    height: 100%;
 }
 
 form .logo span {

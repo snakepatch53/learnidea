@@ -50,6 +50,7 @@ $radapter->getHTML('/confirmacion/{user_code}', 'confirmacion', function ($DATA,
     $userDao->confirm($user['user_id']);
     return ['user' => $user];
 });
+$radapter->getHTML('/terminos-condiciones-uso', 'terminos-condiciones-uso');
 
 $radapter->getHTML('/cursos', 'cursos');
 $radapter->getHTML(

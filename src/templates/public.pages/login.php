@@ -13,7 +13,10 @@
         <div class="container">
             <form onsubmit="return false" id="form-login">
                 <a class="logo" href="<?= $DATA['http_domain'] ?>">
-                    <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea">
+                    <!-- <img src="<?= $DATA['http_domain'] ?>public/img/logo_dark.svg" alt="Learnidea"> -->
+                    <div class="svg">
+                        <?php include('./public/img/logo.svg') ?>
+                    </div>
                     <span>Learnidea</span>
                 </a>
 

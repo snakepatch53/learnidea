@@ -2,7 +2,10 @@
     <div class="cards">
         <div class="item">
             <a class="logo" href="<?= $DATA['http_domain'] ?>">
-                <img src="<?= $DATA['http_domain'] ?>public/img/logo_light.svg" alt="Logo">
+                <!-- <img src="<?= $DATA['http_domain'] ?>public/img/logo_light.svg" alt="Logo"> -->
+                <div class="svg">
+                    <?php include('./public/img/logo.svg') ?>
+                </div>
                 <span>Learnidea</span>
             </a>
             <p>

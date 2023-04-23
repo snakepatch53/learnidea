@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Confirmación exitosa | <?= $_ENV['APP_NAME'] ?></title>
+    <title>Terminos y Condiciones de Uso | <?= $_ENV['APP_NAME'] ?></title>
     <?php include('./src/templates/public.component/head.php') ?>
     <link rel="stylesheet" href="<?= $DATA['http_domain'] ?>public/css.public/terminos-condiciones-uso.css">
 </head>
@@ -17,17 +17,17 @@
             <div class="container">
 
                 <h1>Términos y condiciones de uso</h1>
-                <p class="out">Bienvenido a Learnidea, una plataforma de educación presencial y virtual que ofrece cursos de capacitación en áreas como programación, música, formación de formadores y fotografía, con la posibilidad de graduarse y recibir un certificado de capacitación avalado por la SENECYT. También ofrecemos certificaciones avaladas por instituciones educativas que se pueden utilizar como un título técnico casi de tercer nivel.</p>
+                <p class="out">Bienvenido a <a target="_blank" href="<?= $DATA['http_domain'] ?>"><?= $_ENV['APP_NAME'] ?></a>, una plataforma de educación presencial y virtual que ofrece cursos de capacitación en áreas como programación, música, formación de formadores y fotografía, con la posibilidad de graduarse y recibir un certificado de capacitación avalado por la <a target="_blank" href="https://www.educacionsuperior.gob.ec/">SENECYT</a>. También ofrecemos certificaciones avaladas por instituciones educativas que se pueden utilizar como un título técnico casi de tercer nivel.</p>
                 <p class="out">Para utilizar nuestros servicios y cursos, es necesario que leas y aceptes los siguientes términos y condiciones de uso. Al registrarte en nuestra plataforma, ingresarás tus datos personales fidedignos y definirás una contraseña.</p>
 
                 <ol>
                     <li>
                         <h2>Licencia</h2>
-                        <p>Learnidea concede una licencia limitada, no exclusiva y no transferible a los usuarios para hacer uso personal y no comercial de los cursos comprados en nuestro sitio web, de acuerdo con los términos y condiciones descritos en este documento. Esta licencia no incluye la reventa ni el uso comercial de los cursos ni de los contenidos que se muestran en la plataforma.</p>
+                        <p><a target="_blank" href="<?= $DATA['http_domain'] ?>"><?= $_ENV['APP_NAME'] ?></a> concede una licencia limitada, no exclusiva y no transferible a los usuarios para hacer uso personal y no comercial de los cursos comprados en nuestro sitio web, de acuerdo con los términos y condiciones descritos en este documento. Esta licencia no incluye la reventa ni el uso comercial de los cursos ni de los contenidos que se muestran en la plataforma.</p>
                     </li>
                     <li>
                         <h2>Uso no autorizado</h2>
-                        <p>Los usuarios no pueden copiar ningún curso o contenido de Learnidea, modificado o sin modificar, en un CD, sitio web u otro medio, ni ofrecerlos para la redistribución gratuita o la reventa de ningún tipo para el beneficio de un tercero. En caso de hacerlo, Learnidea se reserva el derecho a cancelar la cuenta del usuario en nuestra plataforma de cursos (ver reembolso).</p>
+                        <p>Los usuarios no pueden copiar ningún curso o contenido de <a target="_blank" href="<?= $DATA['http_domain'] ?>"><?= $_ENV['APP_NAME'] ?></a>, modificado o sin modificar, en un CD, sitio web u otro medio, ni ofrecerlos para la redistribución gratuita o la reventa de ningún tipo para el beneficio de un tercero. En caso de hacerlo, <a target="_blank" href="<?= $DATA['http_domain'] ?>"><?= $_ENV['APP_NAME'] ?></a> se reserva el derecho a cancelar la cuenta del usuario en nuestra plataforma de cursos (ver reembolso).</p>
                     </li>
                     <li>
                         <h2>Uso indebido</h2>
@@ -65,7 +65,7 @@
                     <p class="out">Podemos tomar alguna de estas medidas o todas ellas en función de los resultados de una evaluación de la actividad, que realizaremos con o sin previo aviso, advertencia preliminar o respuesta menor, bajo nuestro exclusivo criterio en cada caso y según lo consideremos apropiado. Asimismo, podremos adoptar otros enfoques que creamos pertinentes para hacer cumplir nuestras normas. La presente Política no limita en modo alguno ningún otro derecho o recurso a nuestra disposición.</p>
                     <li>
                         <h2>Propiedad</h2>
-                        <p>Los usuarios no pueden reclamar propiedad intelectual o exclusiva sobre ninguno de los cursos o contenidos de Learnidea, ya sea modificado o no modificado. Todos los cursos y contenidos son propiedad exclusiva de la empresa. En ningún caso la empresa será responsable de ningún daño, incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes, o de cualquier otra pérdida de beneficios o ingresos, incluso si se ha avisado a la empresa sobre la posibilidad de dichos daños.</p>
+                        <p>Los usuarios no pueden reclamar propiedad intelectual o exclusiva sobre ninguno de los cursos o contenidos de <a target="_blank" href="<?= $DATA['http_domain'] ?>"><?= $_ENV['APP_NAME'] ?></a>, ya sea modificado o no modificado. Todos los cursos y contenidos son propiedad exclusiva de la empresa. En ningún caso la empresa será responsable de ningún daño, incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes, o de cualquier otra pérdida de beneficios o ingresos, incluso si se ha avisado a la empresa sobre la posibilidad de dichos daños.</p>
                     </li>
                     <li>
                         <h2>Ley aplicable y jurisdicción</h2>
@@ -82,9 +82,9 @@
                     <p class="out">Al aceptar estos Términos y Condiciones, el usuario reconoce que ha leído, entendido y aceptado todas las disposiciones contenidas en ellos. Si el usuario no está de acuerdo con alguno de los términos, deberá abstenerse de utilizar el sitio web y los servicios ofrecidos en él.</p>
                     <li>
                         <h2>Contacto</h2>
-                        <p>Si el usuario tiene alguna duda o consulta sobre estos Términos y Condiciones, puede ponerse en contacto con la empresa a través de [dirección de correo electrónico o formulario de contacto].</p>
+                        <p>Si el usuario tiene alguna duda o consulta sobre estos Términos y Condiciones, puede ponerse en contacto con la empresa a través de nuestro <a target="_blank" href="<?= $DATA['http_domain'] ?>contactos/#section-formulario">formulario de contacto</a>.</p>
                     </li>
-                    <p class="out">Al aceptar estos Términos y Condiciones, el usuario también acepta la Política de Privacidad y la Política de Cookies de la empresa, que se encuentran disponibles en el sitio web y regulan la recopilación, uso y protección de la información personal del usuario.</p>
+                    <p class="out">Al aceptar estos Términos y Condiciones, el usuario también acepta la <a target="_blank" href="<?= $DATA['http_domain'] ?>politica-privacidad/">Política de Privacidad</a> y la <a target="_blank" href="<?= $DATA['http_domain'] ?>politica-cookies/">Política de Cookies</a> de la empresa, que se encuentran disponibles en el sitio web y regulan la recopilación, uso y protección de la información personal del usuario.</p>
                 </ol>
 
             </div>

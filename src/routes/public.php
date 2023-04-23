@@ -51,6 +51,8 @@ $radapter->getHTML('/confirmacion/{user_code}', 'confirmacion', function ($DATA,
     return ['user' => $user];
 });
 $radapter->getHTML('/terminos-condiciones-uso', 'terminos-condiciones-uso');
+$radapter->getHTML('/politica-privacidad', 'politica-privacidad');
+$radapter->getHTML('/politica-cookies', 'politica-cookies');
 
 $radapter->getHTML('/cursos', 'cursos');
 $radapter->getHTML(

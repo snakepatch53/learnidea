@@ -39,6 +39,9 @@
                 <li><a href="<?= $DATA['http_domain'] ?>contactos/">Contacto</a></li>
                 <li><a href="<?= $DATA['http_domain'] ?>register/">Registrarse</a></li>
                 <li><a href="<?= $DATA['http_domain'] ?>login/">Iniciar sesion</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>terminos-condiciones-uso/">Terminos y Condiciones de Uso</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>politica-privacidad/">Política de Privacidad</a></li>
+                <li><a href="<?= $DATA['http_domain'] ?>politica-cookies/">Política de Cookies</a></li>
             </ul>
         </div>
 

@@ -24,7 +24,7 @@
             <div class="container">
                 <h4>¿Que puedes aprender en <b>Learnidea</b>?</h4>
                 <span>Certificados avalados por instituciones publicas y privadas.</span>
-                <a href="<?= $DATA['http_domain'] ?>cursos" class="content">
+                <a href="<?= $DATA['http_domain'] ?>areas" class="content">
                     <div class="description">
                         <h5>Programacion, música, fibra óptica, educacion de educadores.</h5>
                         <p>¡Domina areas en tendencia y conviertete en un experto! Estudia desde cero hasta experto, con cursos de programacion, musica, fibra optica, educacion de educadores, y mucho mas.</p>
@@ -34,7 +34,7 @@
                     </div>
                 </a>
                 <div class="areas">
-                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/1" class="item">
+                    <a href="<?= $DATA['http_domain'] ?>areas/1" class="item">
                         <div class="image">
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/1.png" alt="">
                         </div>
@@ -43,7 +43,7 @@
                             <p>¡Aprende a programar desde cero! domina los lenguajes de programación mas usados en el mundo, como Java, C#, Python, PHP, JavaScript, y mucho mas.</p>
                         </div>
                     </a>
-                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/2" class="item">
+                    <a href="<?= $DATA['http_domain'] ?>areas/2" class="item">
                         <div class="image">
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/2.png" alt="">
                         </div>
@@ -52,7 +52,7 @@
                             <p>¡Aprende desde teoria musical hasta ser un experto en cualquier rama de la musica! domina la guitarra, piano, bateria, canto, y mucho mas.</p>
                         </div>
                     </a>
-                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/3" class="item">
+                    <a href="<?= $DATA['http_domain'] ?>areas/3" class="item">
                         <div class="image">
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/3.png" alt="">
                         </div>
@@ -61,7 +61,7 @@
                             <p>¡Aprende a instalar y configurar redes de fibra optica! domina habilidades de fibra optica, conectorizacion, empalmes, reparaciones, construccion de troncales, derivaciones y mucho mas.</p>
                         </div>
                     </a>
-                    <a href="<?= $DATA['http_domain'] ?>cursos/areas/4" class="item">
+                    <a href="<?= $DATA['http_domain'] ?>areas/4" class="item">
                         <div class="image">
                             <img src="<?= $DATA['http_domain'] ?>public/img.areas/4.png" alt="">
                         </div>

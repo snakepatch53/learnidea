@@ -40,6 +40,7 @@ class RAdapter
                 "name" => $name,
                 "path" => $path,
                 "http_domain" => $http_domain,
+                "autoinclude" => $auto_include,
                 "mysqlAdapter" => new MysqlAdapter(
                     $_ENV['DB_HOST'],
                     $_ENV['DB_USER'],
@@ -62,9 +63,8 @@ class RAdapter
                 // Comprobar si el middleware devuelve un array para unirlo al array DATA
                 if (is_array($middleware_respponse)) $DATA = array_merge($DATA, $middleware_respponse);
             }
-
             // Comprobar si se envio quiere que se incluya un archivo con el mismo nombre que el nombre de la vista
-            if ($auto_include == true) {
+            if ($auto_include == true && $DATA['autoinclude'] == true) {
                 // Comprobar si existe el archivo
                 if (file_exists($path . $name . '.php')) {
                     (fn ($DATA, ...$args) => include($path . $name . '.php'))($DATA, ...$args);

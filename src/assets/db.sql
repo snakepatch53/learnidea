@@ -119,6 +119,7 @@ INSERT INTO
         user_user,
         user_email,
         user_pass,
+        user_email_verified,
         user_type,
         user_last,
         user_created
@@ -130,6 +131,7 @@ VALUES
         'admin',
         'learnidea@email.com',
         '21232f297a57a5a743894a0e4a801fc3',
+        1,
         3,
         '2023-01-01 00:00:00',
         '2023-01-01 00:00:00'
@@ -140,6 +142,7 @@ VALUES
         'ideasoft',
         'ideasoft@email.com',
         '27c355de4d2f5202868fc6c72991a3f2',
+        1,
         3,
         '2023-01-01 00:00:00',
         '2023-01-01 00:00:00'

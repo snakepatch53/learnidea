@@ -14,7 +14,7 @@
 
     <main class="animate__animated animate__fadeIn">
         <div class="container">
-            <img src="<?= $DATA['http_domain'] ?>public/img/personaje2.png?last=<?= $DATA['info']['info_last'] ?>" alt="Imagen 2 del personaje">
+            <!-- <img src="<?= $DATA['http_domain'] ?>public/img/personaje2.png?last=<?= $DATA['info']['info_last'] ?>" alt="Imagen 2 del personaje"> -->
             <h2>404</h2>
             <p>Estas orbitando por página desconocidas.</p>
             <br><br>

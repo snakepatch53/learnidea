@@ -29,6 +29,13 @@ class UserDao
         return $this->prepareRecord($row);
     }
 
+    public function selectByCode($user_code)
+    {
+        $resultset = $this->mysqlAdapter->query("SELECT * FROM users WHERE user_code = '$user_code'");
+        $row = mysqli_fetch_assoc($resultset);
+        return $this->prepareRecord($row);
+    }
+
     public function isRegistered($user_email, $user_cedula)
     {
         $resultset = $this->mysqlAdapter->query("SELECT * FROM users WHERE user_email = '$user_email' OR user_cedula = '$user_cedula'");
@@ -139,12 +146,17 @@ class UserDao
     //     ");
     // }
 
-    public function update_userName_byId(
-        $user_id,
-        $user_user
-    ) {
+    public function update_userName_byId($user_id, $user_user)
+    {
         return $this->mysqlAdapter->query("UPDATE users SET user_user='$user_user' WHERE user_id = $user_id ");
     }
+
+    public function confirm($user_id)
+    {
+        return $this->mysqlAdapter->query("UPDATE users SET user_email_verified = 1 WHERE user_id = $user_id ");
+    }
+
+
 
 
     public function deleteById($user_id)
@@ -159,6 +171,7 @@ class UserDao
     // preparar datos consultados en la base de datos de un usuario
     private function prepareRecord($row)
     {
+        if (!$row) return false;
         // Result
         $result = [];
 

@@ -40,6 +40,17 @@ $radapter->getHTML('/', 'home', function ($DATA) {
 
 $radapter->getHTML('/login', 'login');
 $radapter->getHTML('/register', 'register');
+$radapter->getHTML('/confirmacion/{user_code}', 'confirmacion', function ($DATA, $user_code) {
+    $userDao = new UserDao($DATA['mysqlAdapter']);
+    $user = $userDao->selectByCode($user_code);
+    if (!$user) {
+        include('./src/templates/public.pages/404.php');
+        return  ['autoinclude' => false];
+    }
+    $userDao->confirm($user['user_id']);
+    return ['user' => $user];
+});
+
 $radapter->getHTML('/cursos', 'cursos');
 $radapter->getHTML(
     '/test',
@@ -60,3 +71,5 @@ $radapter->getHTML('/cursos/{curso_id}', 'curso', function ($DATA, $curso_id) {
 $radapter->getHTML('/nosotros', 'nosotros');
 
 $radapter->getHTML('/contactos', 'contactos');
+
+$radapter->set404('404');

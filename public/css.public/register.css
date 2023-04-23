@@ -13,8 +13,6 @@ body {
     --color4: #1292ee;
     --color4-contrast1: #ffffff;
 
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +109,6 @@ form .inputs .item .input {
     border: solid 1px transparent;
 }
 
-
 form .inputs .item .input input {
     flex: 1;
     background: transparent;
@@ -147,9 +144,9 @@ form .inputs .item .input button i {
     font-size: 1rem;
 }
 
-form .inputs .item .input button i.show {}
+/* form .inputs .item .input button i.show {} */
 
-form .inputs .item .input button i.hide {}
+/* form .inputs .item .input button i.hide {} */
 
 form .inputs .item .input button i.hide,
 form .inputs .item .input.show button i.show {
@@ -201,10 +198,6 @@ form .inputs .item.success .input {
     border-color: #32cc5d;
     transition: all 0.2s ease;
 }
-
-
-
-
 
 form .inputs .item.radio .input {
     padding: 0;
@@ -358,7 +351,6 @@ form .more .link a:hover {
     transition: all 0.2s ease;
 }
 
-
 @media (max-width: 600px) {
     form {
         background: transparent;
@@ -370,9 +362,7 @@ form .more .link a:hover {
     }
 }
 
-
 @media (max-width: 450px) {
-
     main {
         padding: 20px;
     }
@@ -386,15 +376,11 @@ form .more .link a:hover {
     }
 }
 
-
 @media (max-width: 300px) {
-
     main {
         padding: 10px;
     }
 }
-
-
 
 /*modal confirm register*/
 
@@ -418,6 +404,8 @@ form .more .link a:hover {
     backdrop-filter: blur(5px);
     transition: all 0.2s ease;
     padding: var(--container-padding);
+
+    /*    color: #646464;*/
 }
 
 .modal_success canvas {
@@ -486,7 +474,7 @@ form .more .link a:hover {
 .modal_success .container .load p {
     text-align: center;
     font-family: manrope;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color3-contrast4);
 }
 
@@ -502,6 +490,11 @@ form .more .link a:hover {
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
     padding: 60px 30px;
+}
+
+.modal_success.load .container {
+    background: transparent;
+    box-shadow: unset;
 }
 
 .modal_success .container .content {
@@ -551,11 +544,7 @@ form .more .link a:hover {
     color: var(--color3-contrast4);
     text-align: center;
     user-select: text;
-    text-shadow:
-        1px 0 1px rgba(0, 0, 0, 0.3),
-        -1px 0 1px rgba(0, 0, 0, 0.3),
-        0 1px 1px rgba(0, 0, 0, 0.3),
-        0 -1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 0 1px rgba(0, 0, 0, 0.3), -1px 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .modal_success .container .content .text p span {

@@ -62,11 +62,13 @@ $form.onsubmit = (e) => {
         $modal_success.classList.add("open");
         const formData = new FormData($form);
         fetch_query(formData, "users", "register").then((res) => {
+            console.log(res);
             if (!res.response) {
                 $general_message.classList.remove("info");
                 $general_message.classList.remove("success");
                 $general_message.classList.add("error");
                 $general_message.textContent = res.message;
+                $modal_success.classList.remove("open");
                 return;
             }
             $general_message.classList.remove("info");

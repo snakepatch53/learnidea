@@ -144,7 +144,7 @@
             <div class="container">
                 <div class="load">
                     <i class="fas fa-spinner fa-spin"></i>
-                    <p>Registrando...</p>
+                    <p class="message">Cargando..</p>
                 </div>
                 <div class="content">
                     <div class="icon">

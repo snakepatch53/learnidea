@@ -22,7 +22,7 @@
                 <span>4</span>
             </a>
             <h2 class="subtitle">Perdido en las profundidades</h2>
-            <p>¡Abandonen el barco! Este submarino se ha perdido en una zona desconocida del océano. Lamentablemente, la página que buscas no está a bordo. Por favor, intenta buscar en otro lugar.</p>
+            <p>¡Abandonen el barco! Este submarino se ha perdido en una zona desconocida del océano. Lamentablemente, la página que buscas no está a bordo. Por favor, ponte a salvo.</p>
             <a href="<?= $DATA['http_domain'] ?>">
                 <span>Navegar a la superficie</span>
                 <i class="fas fa-arrow-up"></i>

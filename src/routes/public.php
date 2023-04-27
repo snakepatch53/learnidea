@@ -55,16 +55,6 @@ $radapter->getHTML('/politica-privacidad', 'politica-privacidad');
 $radapter->getHTML('/politica-cookies', 'politica-cookies');
 
 $radapter->getHTML('/cursos', 'cursos');
-$radapter->getHTML(
-    '/test',
-    'test',
-    function ($DATA) {
-        include('./src/templates/general.pages/emailConfirmCode.php');
-        echo $html_content;
-    },
-    null,
-    false
-);
 
 $radapter->getHTML('/cursos/{curso_id}', 'curso', function ($DATA, $curso_id) {
     // search curso by ID or NAME
